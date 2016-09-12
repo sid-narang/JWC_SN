@@ -1,5 +1,4 @@
 ---
-
 modules:
   blazemeter:
     test: Taurus Demo
@@ -21,5 +20,5 @@ services:
 execution:
   scenario: simple
   hold-for: 5m
-  concurrency: 250
+  concurrency: 200
   ramp-up: 30s
