@@ -16,11 +16,10 @@ services:
 - module: passfail
   criteria:
   - avg-rt of IndexPage>150ms for 10s, stop as failed
-  - fail of CheckoutPage>50% for 10s, stop as failed
-
+#  - fail of CheckoutPage>50% for 10s, stop as failed
 
 execution:
   scenario: simple
   hold-for: 5m
-  concurrency: 200
+  concurrency: 250
   ramp-up: 30s
