@@ -1,0 +1,9 @@
+#! /usr/local/bin/bzt
+---
+execution:
+  - executor: selenium
+    concurrency: 1
+    hold-for: 2m30s
+    ramp-up: 1m
+    scenario:
+      script: selenium1.py
