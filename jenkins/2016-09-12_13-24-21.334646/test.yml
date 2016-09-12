@@ -6,16 +6,16 @@ modules:
 scenarios:
   simple:
     requests:
-    - label: HomePage
+    - label: IndexPage
       url: http://blazedemo.com/
-    - label: PurchasePage
-     url: http://blazedemo.com/purchase.php
+    - label: CheckoutPage
+      url: http://blazedemo.com/checkout.php
 
 services:
 - module: passfail
   criteria:
-  - avg-rt of HomePage>150ms for 10s, continue as failed
-#  - fail of PurchasePage>50% for 10s, stop as failed
+  - avg-rt of IndexPage>150ms for 10s, stop as failed
+#  - fail of CheckoutPage>50% for 10s, stop as failed
 
 execution:
   scenario: simple
