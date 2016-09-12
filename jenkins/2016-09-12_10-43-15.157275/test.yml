@@ -6,11 +6,10 @@ modules:
 
 scenarios:
   simple:
-    requests:
-    - label: IndexPage
-      url: http://blazedemo.com/
-    - label: CheckoutPage
-      url: http://blazedemo.com/checkout.php
+  - label: IndexPage
+    url: http://blazedemo.com/
+  - label: CheckoutPage
+    url: http://blazedemo.com/checkout.php
 
 services:
 - module: passfail

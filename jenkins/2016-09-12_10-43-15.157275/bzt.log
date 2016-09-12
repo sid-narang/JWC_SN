@@ -1,0 +1,90 @@
+[2016-09-12 10:43:14,624 INFO root] Taurus CLI Tool v1.6.8
+[2016-09-12 10:43:14,624 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': ['gui']}
+[2016-09-12 10:43:14,624 DEBUG root] Python: CPython 2.7.10
+[2016-09-12 10:43:14,624 DEBUG root] OS: ('Darwin', 'Sids-MacBook-Pro-2.local', '14.5.0', 'Darwin Kernel Version 14.5.0: Mon Aug 29 21:14:16 PDT 2016; root:xnu-2782.50.6~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2016-09-12 10:43:14,625 INFO root] Starting with configs: ['test.yml']
+[2016-09-12 10:43:14,625 INFO Engine] Configuring...
+[2016-09-12 10:43:14,625 DEBUG Engine] Reading machine configs from: /etc/bzt.d
+[2016-09-12 10:43:14,625 DEBUG Engine] Adding personal config: /Users/sidnarang/.bzt-rc
+[2016-09-12 10:43:14,625 DEBUG Engine.Configuration] Configs: ['/etc/bzt.d/10-base.json', '/etc/bzt.d/99-installID.yml', '/Users/sidnarang/.bzt-rc']
+[2016-09-12 10:43:14,626 DEBUG Engine.Configuration] Reading /etc/bzt.d/10-base.json as JSON
+[2016-09-12 10:43:14,627 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-installID.yml as YAML
+[2016-09-12 10:43:14,628 DEBUG Engine.Configuration] Reading /Users/sidnarang/.bzt-rc as YAML
+[2016-09-12 10:43:14,628 DEBUG Engine.Configuration] Configs: ['test.yml']
+[2016-09-12 10:43:14,628 DEBUG Engine.Configuration] Reading test.yml as YAML
+[2016-09-12 10:43:14,632 DEBUG root] Configs: ['test.yml']
+[2016-09-12 10:43:14,632 DEBUG root] Reading test.yml as YAML
+[2016-09-12 10:43:14,637 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.6.8&installID=c8843905-b92c-4f70-b648-47b394eef70f
+[2016-09-12 10:43:15,156 DEBUG Engine] Result: {"latest":"1.6.8","needsUpgrade":false}
+[2016-09-12 10:43:15,157 DEBUG Engine] Installation is up-to-date
+[2016-09-12 10:43:15,157 INFO Engine] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275
+[2016-09-12 10:43:15,157 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/effective
+[2016-09-12 10:43:15,159 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/effective.yml
+[2016-09-12 10:43:15,176 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/effective.json
+[2016-09-12 10:43:15,177 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/merged.yml
+[2016-09-12 10:43:15,178 DEBUG root] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/merged.yml
+[2016-09-12 10:43:15,180 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/merged.json
+[2016-09-12 10:43:15,180 DEBUG root] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/merged.json
+[2016-09-12 10:43:15,180 DEBUG Engine] Add existing artifact (move=False): test.yml
+[2016-09-12 10:43:15,180 DEBUG Engine] Copying test.yml to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/test.yml
+[2016-09-12 10:43:15,180 INFO Engine] Preparing...
+[2016-09-12 10:43:15,181 DEBUG Engine] Module config: consolidator defaultdict(None, {u'ignore-labels': [u'ignore'], u'percentiles': [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0], u'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2016-09-12 10:43:15,181 DEBUG root] Importing module: bzt.modules.aggregator
+[2016-09-12 10:43:15,186 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/Library/Python/2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2016-09-12 10:43:15,186 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2016-09-12 10:43:15,186 DEBUG Engine] Module config: monitoring defaultdict(None, {u'class': u'bzt.modules.monitoring.Monitoring'})
+[2016-09-12 10:43:15,186 DEBUG root] Importing module: bzt.modules.monitoring
+[2016-09-12 10:43:15,246 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/Library/Python/2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2016-09-12 10:43:15,246 DEBUG Engine] Module config: passfail defaultdict(None, {u'class': u'bzt.modules.passfail.PassFailStatus'})
+[2016-09-12 10:43:15,247 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 10:43:15,247 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 10:43:15,248 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 10:43:15,248 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 10:43:15,248 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 10:43:15,248 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 10:43:15,248 DEBUG Engine] Module config: local defaultdict(None, {u'class': u'bzt.modules.provisioning.Local'})
+[2016-09-12 10:43:15,248 DEBUG root] Importing module: bzt.modules.provisioning
+[2016-09-12 10:43:15,248 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/Library/Python/2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2016-09-12 10:43:15,248 DEBUG Engine] Module config: jmeter defaultdict(None, {u'path': u'~/.bzt/jmeter-taurus/', u'gui': True, u'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], u'properties': defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeterengine.force.system.exit': u'true', u'jmeter.save.saveservice.connect_time': u'true', u'summariser.name': u'', u'mode': u'Stripped'}), u'class': u'bzt.modules.jmeter.JMeterExecutor'})
+[2016-09-12 10:43:15,248 DEBUG root] Importing module: bzt.modules.jmeter
+[2016-09-12 10:43:15,261 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/Library/Python/2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2016-09-12 10:43:15,261 DEBUG Engine.local] Preparing executor: jmeter/4482413264
+[2016-09-12 10:43:15,261 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/jmeter.log
+[2016-09-12 10:43:15,261 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2016-09-12 10:43:15,262 DEBUG Engine.jmeter] Port 4445 is free
+[2016-09-12 10:43:15,262 DEBUG Engine.jmeter] Using port 4445 for management
+[2016-09-12 10:43:15,262 DEBUG Engine.jmeter.JavaVM] Trying: ['java', '-version']
+[2016-09-12 10:43:15,440 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_45"
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+
+[2016-09-12 10:43:15,441 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2016-09-12 10:43:15,441 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh
+[2016-09-12 10:43:15,443 DEBUG bzt.utils] Executing shell: [u'/Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh', '-j', '/var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/jmetergKT99slog', '--version']
+[2016-09-12 10:43:15,954 DEBUG Engine.jmeter.JMeter] JMeter check: Copyright (c) 1998-2015 The Apache Software Foundation
+Version 2.13 r1665067
+ / None
+[2016-09-12 10:43:15,958 DEBUG root] Caught exception in try: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 155, in perform
+    self.engine.prepare()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 115, in prepare
+    self.__prepare_provisioning()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 452, in __prepare_provisioning
+    self.provisioning.prepare()
+  File "/Library/Python/2.7/site-packages/bzt/modules/provisioning.py", line 64, in prepare
+    executor.prepare()
+  File "/Library/Python/2.7/site-packages/bzt/modules/jmeter.py", line 101, in prepare
+    elif scenario.get("requests"):
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 985, in get
+    return self.data.get(key, default)
+AttributeError: 'list' object has no attribute 'get'
+
+[2016-09-12 10:43:15,958 ERROR root] AttributeError: 'list' object has no attribute 'get'
+[2016-09-12 10:43:15,959 INFO Engine] Post-processing...
+[2016-09-12 10:43:15,959 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:43:15,961 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/effective.yml
+[2016-09-12 10:43:15,980 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/effective.json
+[2016-09-12 10:43:15,981 INFO root] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275
+[2016-09-12 10:43:15,981 WARNING root] Done performing with code: 1
+[2016-09-12 10:43:15,982 DEBUG Engine] Add existing artifact (move=True): bzt.log
+[2016-09-12 10:43:15,982 DEBUG Engine] Moving bzt.log to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-43-15.157275/bzt.log

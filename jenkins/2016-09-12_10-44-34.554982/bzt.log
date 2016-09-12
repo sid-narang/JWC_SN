@@ -1,0 +1,639 @@
+[2016-09-12 10:44:34,149 INFO root] Taurus CLI Tool v1.6.8
+[2016-09-12 10:44:34,149 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': ['gui']}
+[2016-09-12 10:44:34,149 DEBUG root] Python: CPython 2.7.10
+[2016-09-12 10:44:34,149 DEBUG root] OS: ('Darwin', 'Sids-MacBook-Pro-2.local', '14.5.0', 'Darwin Kernel Version 14.5.0: Mon Aug 29 21:14:16 PDT 2016; root:xnu-2782.50.6~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2016-09-12 10:44:34,150 INFO root] Starting with configs: ['test.yml']
+[2016-09-12 10:44:34,150 INFO Engine] Configuring...
+[2016-09-12 10:44:34,150 DEBUG Engine] Reading machine configs from: /etc/bzt.d
+[2016-09-12 10:44:34,150 DEBUG Engine] Adding personal config: /Users/sidnarang/.bzt-rc
+[2016-09-12 10:44:34,150 DEBUG Engine.Configuration] Configs: ['/etc/bzt.d/10-base.json', '/etc/bzt.d/99-installID.yml', '/Users/sidnarang/.bzt-rc']
+[2016-09-12 10:44:34,150 DEBUG Engine.Configuration] Reading /etc/bzt.d/10-base.json as JSON
+[2016-09-12 10:44:34,150 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-installID.yml as YAML
+[2016-09-12 10:44:34,151 DEBUG Engine.Configuration] Reading /Users/sidnarang/.bzt-rc as YAML
+[2016-09-12 10:44:34,151 DEBUG Engine.Configuration] Configs: ['test.yml']
+[2016-09-12 10:44:34,151 DEBUG Engine.Configuration] Reading test.yml as YAML
+[2016-09-12 10:44:34,154 DEBUG root] Configs: ['test.yml']
+[2016-09-12 10:44:34,154 DEBUG root] Reading test.yml as YAML
+[2016-09-12 10:44:34,157 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.6.8&installID=c8843905-b92c-4f70-b648-47b394eef70f
+[2016-09-12 10:44:34,554 DEBUG Engine] Result: {"latest":"1.6.8","needsUpgrade":false}
+[2016-09-12 10:44:34,554 DEBUG Engine] Installation is up-to-date
+[2016-09-12 10:44:34,555 INFO Engine] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982
+[2016-09-12 10:44:34,555 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective
+[2016-09-12 10:44:34,557 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.yml
+[2016-09-12 10:44:34,572 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.json
+[2016-09-12 10:44:34,573 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/merged.yml
+[2016-09-12 10:44:34,574 DEBUG root] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/merged.yml
+[2016-09-12 10:44:34,576 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/merged.json
+[2016-09-12 10:44:34,577 DEBUG root] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/merged.json
+[2016-09-12 10:44:34,577 DEBUG Engine] Add existing artifact (move=False): test.yml
+[2016-09-12 10:44:34,577 DEBUG Engine] Copying test.yml to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/test.yml
+[2016-09-12 10:44:34,578 INFO Engine] Preparing...
+[2016-09-12 10:44:34,578 DEBUG Engine] Module config: consolidator defaultdict(None, {u'ignore-labels': [u'ignore'], u'percentiles': [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0], u'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2016-09-12 10:44:34,578 DEBUG root] Importing module: bzt.modules.aggregator
+[2016-09-12 10:44:34,580 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/Library/Python/2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2016-09-12 10:44:34,580 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2016-09-12 10:44:34,580 DEBUG Engine] Module config: monitoring defaultdict(None, {u'class': u'bzt.modules.monitoring.Monitoring'})
+[2016-09-12 10:44:34,580 DEBUG root] Importing module: bzt.modules.monitoring
+[2016-09-12 10:44:34,597 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/Library/Python/2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2016-09-12 10:44:34,597 DEBUG Engine] Module config: passfail defaultdict(None, {u'class': u'bzt.modules.passfail.PassFailStatus'})
+[2016-09-12 10:44:34,597 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 10:44:34,597 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 10:44:34,598 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 10:44:34,598 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 10:44:34,598 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 10:44:34,598 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 10:44:34,598 DEBUG Engine] Module config: local defaultdict(None, {u'class': u'bzt.modules.provisioning.Local'})
+[2016-09-12 10:44:34,598 DEBUG root] Importing module: bzt.modules.provisioning
+[2016-09-12 10:44:34,598 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/Library/Python/2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2016-09-12 10:44:34,599 DEBUG Engine] Module config: jmeter defaultdict(None, {u'path': u'~/.bzt/jmeter-taurus/', u'gui': True, u'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], u'properties': defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeterengine.force.system.exit': u'true', u'jmeter.save.saveservice.connect_time': u'true', u'summariser.name': u'', u'mode': u'Stripped'}), u'class': u'bzt.modules.jmeter.JMeterExecutor'})
+[2016-09-12 10:44:34,599 DEBUG root] Importing module: bzt.modules.jmeter
+[2016-09-12 10:44:34,605 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/Library/Python/2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2016-09-12 10:44:34,605 DEBUG Engine.local] Preparing executor: jmeter/4350354128
+[2016-09-12 10:44:34,605 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/jmeter.log
+[2016-09-12 10:44:34,605 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2016-09-12 10:44:34,606 DEBUG Engine.jmeter] Port 4445 is free
+[2016-09-12 10:44:34,606 DEBUG Engine.jmeter] Using port 4445 for management
+[2016-09-12 10:44:34,606 DEBUG Engine.jmeter.JavaVM] Trying: ['java', '-version']
+[2016-09-12 10:44:34,676 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_45"
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+
+[2016-09-12 10:44:34,676 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2016-09-12 10:44:34,676 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh
+[2016-09-12 10:44:34,678 DEBUG bzt.utils] Executing shell: [u'/Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh', '-j', '/var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/jmetertv3VRnlog', '--version']
+[2016-09-12 10:44:34,984 DEBUG Engine.jmeter.JMeter] JMeter check: Copyright (c) 1998-2015 The Apache Software Foundation
+Version 2.13 r1665067
+ / None
+[2016-09-12 10:44:34,986 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/requests.jmx
+[2016-09-12 10:44:34,989 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/requests.jmx
+[2016-09-12 10:44:34,991 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=200, throughput=None, ramp_up=30.0, hold=300.0, iterations=0, duration=330.0, steps=None)
+[2016-09-12 10:44:34,993 DEBUG Engine.jmeter] Original threads: 1.0
+[2016-09-12 10:44:34,995 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:34,995 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:34,996 DEBUG Engine.jmeter] Enforcing parent sample for transaction controller
+[2016-09-12 10:44:34,996 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/modified_requests.jmx
+[2016-09-12 10:44:34,996 DEBUG JMX] Saving JMX to: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/modified_requests.jmx
+[2016-09-12 10:44:34,997 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982', u'summariser.name': u'', u'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', u'mode': u'Stripped', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2016-09-12 10:44:34,997 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/jmeter-bzt.properties
+[2016-09-12 10:44:34,997 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2016-09-12 10:44:34,997 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/system.properties
+[2016-09-12 10:44:34,998 DEBUG Engine] Module config: final_stats defaultdict(None, {u'class': u'bzt.modules.reporting.FinalStatus'})
+[2016-09-12 10:44:34,998 DEBUG root] Importing module: bzt.modules.reporting
+[2016-09-12 10:44:35,004 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/Library/Python/2.7/site-packages/bzt/modules/reporting.pyc'>
+[2016-09-12 10:44:35,005 DEBUG Engine] Module config: console defaultdict(None, {u'disable': False, u'class': u'bzt.modules.console.ConsoleStatusReporter'})
+[2016-09-12 10:44:35,005 DEBUG root] Importing module: bzt.modules.console
+[2016-09-12 10:44:35,005 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/Library/Python/2.7/site-packages/bzt/modules/console.pyc'>
+[2016-09-12 10:44:35,012 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.yml
+[2016-09-12 10:44:35,037 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.json
+[2016-09-12 10:44:35,038 INFO Engine] Starting...
+[2016-09-12 10:44:35,038 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:35,038 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:35,038 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:35,038 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:35,038 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:35,038 INFO Engine.console] Waiting for results...
+[2016-09-12 10:44:35,038 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:35,038 DEBUG Engine.local] Delay setup: 0(start-at) + 0(delay) = 0
+[2016-09-12 10:44:35,040 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.yml
+[2016-09-12 10:44:35,065 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.json
+[2016-09-12 10:44:35,066 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:35,066 DEBUG bzt.utils] Executing shell: [u'/Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh', '-t', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/modified_requests.jmx', '-j', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/jmeter.log', '-q', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/jmeter-bzt.properties', '-S', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/system.properties']
+[2016-09-12 10:44:35,069 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:35,070 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:35,070 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:35,070 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:35,070 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:35,070 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:35,070 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:35,277 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:35,277 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:35,277 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:35,277 DEBUG Engine.console] Overriding logging streams
+[2016-09-12 10:44:35,277 DEBUG Engine.console] Redirected logging streams, [<logging.StreamHandler object at 0x101ed0d90>]/{<logging.StreamHandler object at 0x101ed0d90>: <open file '<stdout>', mode 'w' at 0x10108e150>}
+[2016-09-12 10:44:35,278 INFO Engine.console] Waiting for finish...
+[2016-09-12 10:44:35,308 DEBUG Engine] Iteration took 0.242 sec, sleeping for 0.758 sec...
+[2016-09-12 10:44:36,069 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:36,069 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:36,069 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:36,069 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:36,069 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:36,069 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:36,069 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:36,070 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:36,071 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:36,071 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:36,071 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:36,076 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-12 10:44:37,073 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:37,073 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:37,073 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:37,074 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:37,074 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:37,074 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:37,074 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:37,074 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:37,076 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:37,076 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:37,076 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:37,081 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-12 10:44:38,074 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:38,075 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:38,075 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:38,075 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:38,075 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:38,075 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:38,075 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:38,075 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:38,076 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:38,076 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:38,076 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:38,082 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-12 10:44:39,079 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:39,079 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:39,079 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:39,079 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:39,079 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:39,079 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:39,079 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:39,079 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:39,082 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:39,082 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:39,082 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:39,088 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:40,081 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:40,082 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:40,082 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:40,082 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:40,082 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:40,082 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:40,082 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:40,082 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:40,084 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:40,085 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:40,085 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:40,091 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:41,087 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:41,087 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:41,087 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:41,087 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:41,087 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:41,087 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:41,087 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:41,087 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:41,090 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:41,090 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:41,090 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:41,097 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:42,089 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:42,089 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:42,089 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:42,089 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:42,090 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:42,090 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:42,090 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:42,090 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:42,092 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:42,092 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:42,092 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:42,099 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:43,093 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:43,093 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:43,094 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:43,094 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:43,094 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:43,094 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:43,094 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:43,094 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:43,096 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:43,096 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:43,097 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:43,103 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:44,096 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:44,096 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:44,096 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:44,096 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:44,096 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:44,096 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:44,096 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:44,096 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:44,098 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:44,098 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:44,098 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:44,104 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 10:44:45,097 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:45,097 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:45,097 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:45,097 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:45,097 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:45,097 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:45,097 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:45,097 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:45,098 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:45,098 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:45,099 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:45,104 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-12 10:44:46,097 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:46,097 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:46,097 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:46,097 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:46,098 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:46,098 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:46,098 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:46,098 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:46,099 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:46,100 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:46,100 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:46,106 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-12 10:44:47,097 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:47,097 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:47,098 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:47,098 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:47,098 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:47,098 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:47,098 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:47,098 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:47,100 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:47,100 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:47,101 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:47,107 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:48,100 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:48,100 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:48,100 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:48,100 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:48,100 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:48,100 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:48,100 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:48,100 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:48,102 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:48,102 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:48,102 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:48,108 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 10:44:49,101 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:49,101 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:49,101 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:49,101 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:49,101 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:49,101 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:49,101 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:49,102 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:49,104 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:49,104 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:49,104 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:49,111 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:50,104 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:50,104 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:50,104 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:50,104 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:50,105 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:50,105 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:50,105 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:50,105 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:50,107 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:50,107 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:50,107 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:50,114 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:51,109 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:51,109 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:51,109 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:51,109 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:51,109 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:51,109 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:51,110 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:51,110 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:51,112 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:51,112 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:51,112 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:51,118 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:52,113 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:52,113 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:52,113 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:52,114 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:52,114 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:52,114 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:52,114 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:52,114 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:52,116 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:52,117 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:52,117 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:52,123 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:53,114 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:53,114 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:53,114 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:53,114 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:53,115 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:53,115 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:53,115 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:53,115 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:53,117 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:53,117 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:53,117 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:53,124 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:54,114 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:54,114 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:54,115 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:54,115 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:54,115 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:54,115 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:54,115 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:54,115 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:54,117 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:54,117 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:54,117 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:54,123 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-12 10:44:55,114 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:55,115 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:55,115 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:55,115 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:55,115 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:55,115 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:55,115 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:55,115 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:55,117 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:55,117 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:55,117 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:55,123 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-12 10:44:56,118 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:56,118 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:56,118 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:56,118 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:56,118 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:56,119 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:56,119 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:56,119 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:56,121 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:56,121 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:56,121 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:56,128 DEBUG Engine] Iteration took 0.011 sec, sleeping for 0.989 sec...
+[2016-09-12 10:44:57,119 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:57,119 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:57,119 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:57,119 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:57,119 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:57,119 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:57,120 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:57,120 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:57,122 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:57,122 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:57,122 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:57,128 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:58,122 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:58,123 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:58,123 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:58,123 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:58,123 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:58,123 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:58,123 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:58,123 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:58,125 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:58,125 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:58,126 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:58,132 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:44:59,124 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:44:59,124 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:44:59,124 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:44:59,124 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:44:59,124 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:44:59,124 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:44:59,124 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:44:59,124 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:44:59,125 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:44:59,125 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:44:59,125 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:44:59,132 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 10:45:00,129 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:00,129 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:00,129 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:00,129 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:00,129 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:00,129 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:00,130 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:00,130 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:00,132 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:00,132 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:00,132 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:00,140 DEBUG Engine] Iteration took 0.011 sec, sleeping for 0.989 sec...
+[2016-09-12 10:45:01,133 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:01,133 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:01,133 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:01,133 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:01,134 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:01,134 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:01,134 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:01,134 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:01,136 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:01,136 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:01,136 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:01,143 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:02,134 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:02,134 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:02,134 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:02,134 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:02,134 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:02,135 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:02,135 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:02,135 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:02,137 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:02,137 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:02,137 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:02,143 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-12 10:45:03,138 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:03,139 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:03,139 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:03,139 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:03,139 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:03,139 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:03,139 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:03,139 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:03,141 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:03,142 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:03,142 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:03,148 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:04,143 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:04,144 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:04,144 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:04,144 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:04,144 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:04,144 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:04,144 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:04,144 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:04,146 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:04,146 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:04,147 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:04,153 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:05,148 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:05,149 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:05,149 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:05,149 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:05,149 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:05,149 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:05,149 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:05,149 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:05,152 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:05,152 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:05,152 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:05,159 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:06,149 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:06,149 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:06,149 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:06,149 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:06,149 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:06,149 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:06,149 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:06,149 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:06,151 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:06,151 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:06,151 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:06,156 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 10:45:07,153 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:07,153 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:07,153 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:07,153 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:07,153 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:07,153 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:07,154 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:07,154 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:07,155 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:07,156 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:07,156 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:07,162 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-12 10:45:08,156 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:08,157 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:08,157 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:08,157 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:08,157 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:08,157 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:08,157 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:08,157 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:08,159 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:08,159 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:08,159 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:08,166 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:09,161 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:09,161 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:09,161 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:09,161 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:09,162 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:09,162 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:09,162 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:09,162 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:09,164 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:09,164 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:09,164 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:09,172 DEBUG Engine] Iteration took 0.011 sec, sleeping for 0.989 sec...
+[2016-09-12 10:45:10,164 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:10,165 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:10,165 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:10,165 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:10,165 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:10,165 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:10,165 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:10,165 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:10,166 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:10,166 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:10,167 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:10,173 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 10:45:11,168 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:11,169 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:11,169 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:11,169 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:11,169 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:11,169 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:11,169 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:11,169 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:11,171 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:11,172 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:11,172 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:11,178 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:12,173 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:12,173 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:12,173 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:12,173 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:12,173 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:12,173 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:12,174 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:12,174 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:12,176 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:12,176 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:12,176 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:12,182 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:13,174 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:13,174 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:13,174 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:13,174 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:13,174 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:13,174 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:13,174 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:13,174 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:13,177 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:13,177 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:13,177 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:13,184 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:14,179 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x101ed0f10>
+[2016-09-12 10:45:14,179 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x101ed0fd0>
+[2016-09-12 10:45:14,179 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:14,179 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:14,180 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:14,180 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:14,180 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:14,180 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1034a4a90>
+[2016-09-12 10:45:14,182 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x101f0fc90>
+[2016-09-12 10:45:14,182 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x103521c90>
+[2016-09-12 10:45:14,182 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x103549e10>
+[2016-09-12 10:45:14,189 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 10:45:14,702 WARNING Engine] Please wait for graceful shutdown...
+[2016-09-12 10:45:14,709 INFO Engine] Shutting down...
+[2016-09-12 10:45:14,713 DEBUG Engine.local] Shutdown jmeter/simple
+[2016-09-12 10:45:16,717 WARNING Engine.jmeter] JMeter process is still alive, killing it
+[2016-09-12 10:45:17,728 INFO Engine.jmeter] Terminating process PID 11119 with signal 15 (59 tries left)
+[2016-09-12 10:45:18,736 INFO Engine.jmeter] Terminating process PID 11119 with signal 15 (58 tries left)
+[2016-09-12 10:45:18,743 DEBUG Engine.jmeter] Failed to terminate process: [Errno 1] Operation not permitted
+[2016-09-12 10:45:18,743 DEBUG Engine.jmeter] JMeter worked for 43.6769359112 seconds
+[2016-09-12 10:45:18,743 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x101ed0d90>]/{<logging.StreamHandler object at 0x101ed0d90>: <open file '<stdout>', mode 'w' at 0x10108e150>}
+[2016-09-12 10:45:18,745 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.yml
+[2016-09-12 10:45:18,771 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.json
+[2016-09-12 10:45:18,772 DEBUG root] Caught exception in try: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 156, in perform
+    self.engine.run()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 139, in run
+    self._wait()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 173, in _wait
+    time.sleep(delay)
+KeyboardInterrupt
+
+[2016-09-12 10:45:18,772 ERROR root] KeyboardInterrupt: 
+[2016-09-12 10:45:18,772 INFO Engine] Post-processing...
+[2016-09-12 10:45:18,772 DEBUG Engine.local] Post-process jmeter/simple
+[2016-09-12 10:45:18,772 DEBUG Engine] Add existing artifact (move=True): /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/modified_requests.jmx
+[2016-09-12 10:45:18,772 DEBUG Engine] No need to copy /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/modified_requests.jmx
+[2016-09-12 10:45:18,773 ERROR Engine] Error while post-processing: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 212, in post_process
+    module.post_process()
+  File "/Library/Python/2.7/site-packages/bzt/modules/provisioning.py", line 120, in post_process
+    executor.post_process()
+  File "/Library/Python/2.7/site-packages/bzt/modules/jmeter.py", line 240, in post_process
+    raise RuntimeWarning(msg % self.kpi_jtl)
+RuntimeWarning: Empty results JTL, most likely JMeter failed: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+
+[2016-09-12 10:45:18,773 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/error.jtl
+[2016-09-12 10:45:18,773 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:18,773 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 10:45:18,773 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 10:45:18,773 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 10:45:18,773 INFO Engine.final_stats] Test duration: 0:00:43
+[2016-09-12 10:45:18,773 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-09-12 10:45:18,775 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.yml
+[2016-09-12 10:45:18,800 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/effective.json
+[2016-09-12 10:45:18,801 DEBUG Engine] Exception in post-process: Empty results JTL, most likely JMeter failed: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:18,801 WARNING Engine] Failed post-processing
+[2016-09-12 10:45:18,801 DEBUG root] Caught exception in finally: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 176, in perform
+    self.engine.post_process()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 233, in post_process
+    raise exception
+RuntimeWarning: Empty results JTL, most likely JMeter failed: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+
+[2016-09-12 10:45:18,801 ERROR root] RuntimeWarning: Empty results JTL, most likely JMeter failed: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/kpi.jtl
+[2016-09-12 10:45:18,801 INFO root] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982
+[2016-09-12 10:45:18,801 WARNING root] Done performing with code: 1
+[2016-09-12 10:45:18,801 DEBUG Engine] Add existing artifact (move=True): bzt.log
+[2016-09-12 10:45:18,801 DEBUG Engine] Moving bzt.log to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_10-44-34.554982/bzt.log

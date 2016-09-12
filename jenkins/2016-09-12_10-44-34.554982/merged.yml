@@ -1,9 +1,12 @@
 ---
-
+execution:
+  concurrency: 200
+  hold-for: 5m
+  ramp-up: 30s
+  scenario: simple
 modules:
   blazemeter:
     test: Taurus Demo
-
 scenarios:
   simple:
     requests:
@@ -11,16 +14,9 @@ scenarios:
       url: http://blazedemo.com/
     - label: CheckoutPage
       url: http://blazedemo.com/checkout.php
-
 services:
-- module: passfail
-  criteria:
+- criteria:
   - avg-rt of IndexPage>150ms for 10s, stop as failed
   - fail of CheckoutPage>50% for 10s, stop as failed
+  module: passfail
 
-
-execution:
-  scenario: simple
-  hold-for: 5m
-  concurrency: 200
-  ramp-up: 30s
