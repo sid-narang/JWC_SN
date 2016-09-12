@@ -1,4 +1,4 @@
 ---
 reporting:
 - module: final_stats
-  dump-csv: filename to export data in CSV format
+  dump-csv: aggregate.csv
