@@ -1,0 +1,428 @@
+[2016-09-12 18:52:23,118 INFO root] Taurus CLI Tool v1.6.8
+[2016-09-12 18:52:23,118 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-09-12 18:52:23,118 DEBUG root] Python: CPython 2.7.10
+[2016-09-12 18:52:23,118 DEBUG root] OS: ('Darwin', 'Sids-MacBook-Pro-2.local', '14.5.0', 'Darwin Kernel Version 14.5.0: Mon Aug 29 21:14:16 PDT 2016; root:xnu-2782.50.6~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2016-09-12 18:52:23,119 INFO root] Starting with configs: ['test.yml']
+[2016-09-12 18:52:23,119 INFO Engine] Configuring...
+[2016-09-12 18:52:23,119 DEBUG Engine] Reading machine configs from: /etc/bzt.d
+[2016-09-12 18:52:23,120 DEBUG Engine] Adding personal config: /Users/sidnarang/.bzt-rc
+[2016-09-12 18:52:23,120 DEBUG Engine.Configuration] Configs: ['/etc/bzt.d/10-base.json', '/etc/bzt.d/99-installID.yml', '/Users/sidnarang/.bzt-rc']
+[2016-09-12 18:52:23,120 DEBUG Engine.Configuration] Reading /etc/bzt.d/10-base.json as JSON
+[2016-09-12 18:52:23,121 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-installID.yml as YAML
+[2016-09-12 18:52:23,122 DEBUG Engine.Configuration] Reading /Users/sidnarang/.bzt-rc as YAML
+[2016-09-12 18:52:23,123 DEBUG Engine.Configuration] Configs: ['test.yml']
+[2016-09-12 18:52:23,123 DEBUG Engine.Configuration] Reading test.yml as YAML
+[2016-09-12 18:52:23,129 DEBUG root] Caught exception in try: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 140, in perform
+    merged_config = self.engine.configure(configs, not self.options.no_system_configs)
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 91, in configure
+    merged_config = self._load_user_configs(user_configs)
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 435, in _load_user_configs
+    self.config.load(user_configs)
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 569, in load
+    config = self.__read_file(config_file)[0]
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 590, in __read_file
+    return yaml.load(fds), self.YAML
+  File "/Library/Python/2.7/site-packages/yaml/__init__.py", line 71, in load
+    return loader.get_single_data()
+  File "/Library/Python/2.7/site-packages/yaml/constructor.py", line 37, in get_single_data
+    node = self.get_single_node()
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Library/Python/2.7/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/Library/Python/2.7/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Library/Python/2.7/site-packages/yaml/parser.py", line 439, in parse_block_mapping_key
+    "expected <block end>, but found %r" % token.id, token.start_mark)
+ParserError: while parsing a block mapping
+  in "test.yml", line 8, column 5
+expected <block end>, but found '<block mapping start>'
+  in "test.yml", line 12, column 6
+
+[2016-09-12 18:52:23,129 ERROR root] ParserError: while parsing a block mapping
+  in "test.yml", line 8, column 5
+expected <block end>, but found '<block mapping start>'
+  in "test.yml", line 12, column 6
+[2016-09-12 18:52:23,129 INFO Engine] Post-processing...
+[2016-09-12 18:52:23,129 INFO root] Artifacts dir: None
+[2016-09-12 18:52:23,129 WARNING root] Done performing with code: 1
+[2016-09-12 18:52:23,129 DEBUG Engine] Add existing artifact (move=True): bzt.log
+[2016-09-12 18:52:23,129 WARNING Engine] Artifacts dir has not been set, will not copy bzt.log
+[2016-09-12 18:54:39,152 INFO root] Taurus CLI Tool v1.6.8
+[2016-09-12 18:54:39,153 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-09-12 18:54:39,153 DEBUG root] Python: CPython 2.7.10
+[2016-09-12 18:54:39,153 DEBUG root] OS: ('Darwin', 'Sids-MacBook-Pro-2.local', '14.5.0', 'Darwin Kernel Version 14.5.0: Mon Aug 29 21:14:16 PDT 2016; root:xnu-2782.50.6~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2016-09-12 18:54:39,153 INFO root] Starting with configs: ['test.yml']
+[2016-09-12 18:54:39,153 INFO Engine] Configuring...
+[2016-09-12 18:54:39,153 DEBUG Engine] Reading machine configs from: /etc/bzt.d
+[2016-09-12 18:54:39,153 DEBUG Engine] Adding personal config: /Users/sidnarang/.bzt-rc
+[2016-09-12 18:54:39,153 DEBUG Engine.Configuration] Configs: ['/etc/bzt.d/10-base.json', '/etc/bzt.d/99-installID.yml', '/Users/sidnarang/.bzt-rc']
+[2016-09-12 18:54:39,153 DEBUG Engine.Configuration] Reading /etc/bzt.d/10-base.json as JSON
+[2016-09-12 18:54:39,154 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-installID.yml as YAML
+[2016-09-12 18:54:39,154 DEBUG Engine.Configuration] Reading /Users/sidnarang/.bzt-rc as YAML
+[2016-09-12 18:54:39,155 DEBUG Engine.Configuration] Configs: ['test.yml']
+[2016-09-12 18:54:39,155 DEBUG Engine.Configuration] Reading test.yml as YAML
+[2016-09-12 18:54:39,157 DEBUG root] Configs: ['test.yml']
+[2016-09-12 18:54:39,157 DEBUG root] Reading test.yml as YAML
+[2016-09-12 18:54:39,160 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.6.8&installID=c8843905-b92c-4f70-b648-47b394eef70f
+[2016-09-12 18:54:39,912 DEBUG Engine] Result: {"latest":"1.6.8","needsUpgrade":false}
+[2016-09-12 18:54:39,913 DEBUG Engine] Installation is up-to-date
+[2016-09-12 18:54:39,913 INFO Engine] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173
+[2016-09-12 18:54:39,913 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective
+[2016-09-12 18:54:39,916 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.yml
+[2016-09-12 18:54:39,932 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.json
+[2016-09-12 18:54:39,933 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/merged.yml
+[2016-09-12 18:54:39,933 DEBUG root] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/merged.yml
+[2016-09-12 18:54:39,935 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/merged.json
+[2016-09-12 18:54:39,935 DEBUG root] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/merged.json
+[2016-09-12 18:54:39,936 DEBUG Engine] Add existing artifact (move=False): test.yml
+[2016-09-12 18:54:39,936 DEBUG Engine] Copying test.yml to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/test.yml
+[2016-09-12 18:54:39,936 INFO Engine] Preparing...
+[2016-09-12 18:54:39,937 DEBUG Engine] Module config: consolidator defaultdict(None, {u'ignore-labels': [u'ignore'], u'percentiles': [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0], u'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2016-09-12 18:54:39,937 DEBUG root] Importing module: bzt.modules.aggregator
+[2016-09-12 18:54:39,939 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/Library/Python/2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2016-09-12 18:54:39,939 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2016-09-12 18:54:39,939 DEBUG Engine] Module config: monitoring defaultdict(None, {u'class': u'bzt.modules.monitoring.Monitoring'})
+[2016-09-12 18:54:39,939 DEBUG root] Importing module: bzt.modules.monitoring
+[2016-09-12 18:54:39,977 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/Library/Python/2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2016-09-12 18:54:39,977 DEBUG Engine] Module config: passfail defaultdict(None, {u'class': u'bzt.modules.passfail.PassFailStatus'})
+[2016-09-12 18:54:39,977 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 18:54:39,977 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 18:54:39,978 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 18:54:39,978 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 18:54:39,978 DEBUG Engine] Module config: local defaultdict(None, {u'class': u'bzt.modules.provisioning.Local'})
+[2016-09-12 18:54:39,978 DEBUG root] Importing module: bzt.modules.provisioning
+[2016-09-12 18:54:39,978 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/Library/Python/2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2016-09-12 18:54:39,978 DEBUG Engine] Module config: jmeter defaultdict(None, {u'path': u'~/.bzt/jmeter-taurus/', u'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], u'properties': defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeterengine.force.system.exit': u'true', u'jmeter.save.saveservice.connect_time': u'true', u'summariser.name': u'', u'mode': u'Stripped'}), u'class': u'bzt.modules.jmeter.JMeterExecutor'})
+[2016-09-12 18:54:39,978 DEBUG root] Importing module: bzt.modules.jmeter
+[2016-09-12 18:54:39,985 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/Library/Python/2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2016-09-12 18:54:39,985 DEBUG Engine.local] Preparing executor: jmeter/4452299408
+[2016-09-12 18:54:39,985 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/jmeter.log
+[2016-09-12 18:54:39,986 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2016-09-12 18:54:39,986 DEBUG Engine.jmeter] Port 4445 is free
+[2016-09-12 18:54:39,986 DEBUG Engine.jmeter] Using port 4445 for management
+[2016-09-12 18:54:39,986 DEBUG Engine.jmeter.JavaVM] Trying: ['java', '-version']
+[2016-09-12 18:54:40,066 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_45"
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+
+[2016-09-12 18:54:40,066 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2016-09-12 18:54:40,067 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh
+[2016-09-12 18:54:40,069 DEBUG bzt.utils] Executing shell: [u'/Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh', '-j', '/var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/jmeterGjWVtzlog', '--version']
+[2016-09-12 18:54:40,510 DEBUG Engine.jmeter.JMeter] JMeter check: Copyright (c) 1998-2015 The Apache Software Foundation
+Version 2.13 r1665067
+ / None
+[2016-09-12 18:54:40,511 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/requests.jmx
+[2016-09-12 18:54:40,514 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/requests.jmx
+[2016-09-12 18:54:40,515 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=200, throughput=None, ramp_up=60.0, hold=300.0, iterations=0, duration=360.0, steps=None)
+[2016-09-12 18:54:40,517 DEBUG Engine.jmeter] Original threads: 1.0
+[2016-09-12 18:54:40,518 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:40,518 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/error.jtl
+[2016-09-12 18:54:40,518 DEBUG Engine.jmeter] Enforcing parent sample for transaction controller
+[2016-09-12 18:54:40,519 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/modified_requests.jmx
+[2016-09-12 18:54:40,519 DEBUG JMX] Saving JMX to: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/modified_requests.jmx
+[2016-09-12 18:54:40,519 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173', u'summariser.name': u'', u'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', u'mode': u'Stripped', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2016-09-12 18:54:40,519 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/jmeter-bzt.properties
+[2016-09-12 18:54:40,519 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2016-09-12 18:54:40,519 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/system.properties
+[2016-09-12 18:54:40,520 DEBUG Engine] Module config: final_stats defaultdict(None, {u'class': u'bzt.modules.reporting.FinalStatus'})
+[2016-09-12 18:54:40,520 DEBUG root] Importing module: bzt.modules.reporting
+[2016-09-12 18:54:40,525 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/Library/Python/2.7/site-packages/bzt/modules/reporting.pyc'>
+[2016-09-12 18:54:40,525 DEBUG Engine] Module config: console defaultdict(None, {u'disable': False, u'class': u'bzt.modules.console.ConsoleStatusReporter'})
+[2016-09-12 18:54:40,525 DEBUG root] Importing module: bzt.modules.console
+[2016-09-12 18:54:40,525 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/Library/Python/2.7/site-packages/bzt/modules/console.pyc'>
+[2016-09-12 18:54:40,531 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.yml
+[2016-09-12 18:54:40,555 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.json
+[2016-09-12 18:54:40,556 INFO Engine] Starting...
+[2016-09-12 18:54:40,556 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:40,557 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:40,557 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:40,557 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:40,557 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:40,557 INFO Engine.console] Waiting for results...
+[2016-09-12 18:54:40,557 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:40,557 DEBUG Engine.local] Delay setup: 0(start-at) + 0(delay) = 0
+[2016-09-12 18:54:40,559 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.yml
+[2016-09-12 18:54:40,585 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.json
+[2016-09-12 18:54:40,586 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:40,586 DEBUG bzt.utils] Executing shell: [u'/Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh', '-n', '-t', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/modified_requests.jmx', '-j', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/jmeter.log', '-q', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/jmeter-bzt.properties', '-S', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/system.properties']
+[2016-09-12 18:54:40,590 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:40,590 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/error.jtl
+[2016-09-12 18:54:40,590 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:40,590 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 18:54:40,590 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 18:54:40,590 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 18:54:40,590 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:40,795 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:40,795 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:40,795 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:40,795 DEBUG Engine.console] Overriding logging streams
+[2016-09-12 18:54:40,795 DEBUG Engine.console] Redirected logging streams, [<logging.StreamHandler object at 0x108004d90>]/{<logging.StreamHandler object at 0x108004d90>: <open file '<stdout>', mode 'w' at 0x1071c2150>}
+[2016-09-12 18:54:40,796 INFO Engine.console] Waiting for finish...
+[2016-09-12 18:54:40,818 DEBUG Engine] Iteration took 0.233 sec, sleeping for 0.767 sec...
+[2016-09-12 18:54:41,588 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:41,588 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:41,589 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/error.jtl
+[2016-09-12 18:54:41,589 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Opening file: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:41,589 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:41,589 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 1 / 119 bytes (at speed 1048576)
+[2016-09-12 18:54:41,591 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Analyzed header line: ['timeStamp', 'elapsed', 'label', 'responseCode', 'responseMessage', 'threadName', 'success', 'grpThreads', 'allThreads', 'Latency', 'Hostname', 'Connect']
+[2016-09-12 18:54:41,591 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 18:54:41,592 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 18:54:41,592 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:41,593 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:41,593 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:41,593 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:41,599 DEBUG Engine] Iteration took 0.011 sec, sleeping for 0.989 sec...
+[2016-09-12 18:54:42,591 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:42,591 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:42,591 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/error.jtl
+[2016-09-12 18:54:42,591 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:42,592 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-09-12 18:54:42,592 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 18:54:42,592 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 18:54:42,592 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:42,594 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:42,594 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:42,594 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:42,599 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 18:54:43,593 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:43,594 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:43,594 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/error.jtl
+[2016-09-12 18:54:43,594 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:43,594 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-09-12 18:54:43,594 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 18:54:43,594 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 18:54:43,594 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:43,595 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:43,595 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:43,596 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:43,600 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-12 18:54:44,597 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:44,597 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:44,597 DEBUG Engine.jmeter.JTLErrorsReader] Opening /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/error.jtl
+[2016-09-12 18:54:44,598 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:44,598 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 10 / 1003 bytes (at speed 1048576)
+[2016-09-12 18:54:44,598 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-09-12 18:54:44,598 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731681
+[2016-09-12 18:54:44,598 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731682
+[2016-09-12 18:54:44,599 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731681, 1473731682]
+[2016-09-12 18:54:44,599 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:44,600 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:44,600 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:44,600 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:44,604 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-12 18:54:45,600 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:45,600 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:45,602 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:45,602 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 8 / 798 bytes (at speed 1048576)
+[2016-09-12 18:54:45,602 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731682 into 1473731683
+[2016-09-12 18:54:45,602 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731682 into 1473731683
+[2016-09-12 18:54:45,603 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-09-12 18:54:45,603 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2016-09-12 18:54:45,606 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731681, 1473731682]
+[2016-09-12 18:54:45,606 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:45,608 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:45,608 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:45,608 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:45,613 DEBUG Engine] Iteration took 0.013 sec, sleeping for 0.987 sec...
+[2016-09-12 18:54:46,601 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:46,601 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:46,603 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:46,603 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 18 / 1795 bytes (at speed 1048576)
+[2016-09-12 18:54:46,604 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-09-12 18:54:46,604 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731681, 1473731682]
+[2016-09-12 18:54:46,604 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:46,605 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:46,605 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:46,606 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:46,610 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-12 18:54:47,606 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:47,607 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:47,608 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:47,608 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1102 bytes (at speed 1048576)
+[2016-09-12 18:54:47,609 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2016-09-12 18:54:47,609 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731681, 1473731682]
+[2016-09-12 18:54:47,609 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:47,611 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:47,611 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:47,611 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:47,615 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-12 18:54:48,607 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:48,607 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:48,609 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:48,609 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 27 / 2703 bytes (at speed 1048576)
+[2016-09-12 18:54:48,609 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:54:48,610 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731683
+[2016-09-12 18:54:48,611 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731681, 1473731682, 1473731683]
+[2016-09-12 18:54:48,611 DEBUG Engine.consolidator] Merging into 1473731681
+[2016-09-12 18:54:48,611 DEBUG Engine.consolidator] Merging 1473731681
+[2016-09-12 18:54:48,612 DEBUG root] 1473731681 Alert: avg-rt>150ms for 1 sec: True
+[2016-09-12 18:54:48,614 DEBUG Engine.consolidator] Processed datapoint: 1473731681/None
+[2016-09-12 18:54:48,614 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:48,615 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:48,616 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:48,616 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:48,628 DEBUG Engine] Iteration took 0.022 sec, sleeping for 0.978 sec...
+[2016-09-12 18:54:49,608 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:49,608 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:49,610 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:49,610 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 17 / 1700 bytes (at speed 1048576)
+[2016-09-12 18:54:49,610 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:54:49,610 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731684
+[2016-09-12 18:54:49,612 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731682, 1473731683, 1473731684]
+[2016-09-12 18:54:49,612 DEBUG Engine.consolidator] Merging into 1473731682
+[2016-09-12 18:54:49,612 DEBUG Engine.consolidator] Merging 1473731682
+[2016-09-12 18:54:49,613 DEBUG root] 1473731682 Alert: avg-rt>150ms for 2 sec: True
+[2016-09-12 18:54:49,615 DEBUG Engine.consolidator] Processed datapoint: 1473731682/None
+[2016-09-12 18:54:49,615 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:49,616 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:49,616 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:49,616 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:49,631 DEBUG Engine] Iteration took 0.023 sec, sleeping for 0.977 sec...
+[2016-09-12 18:54:50,611 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:50,612 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:50,614 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:50,614 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 25 / 2501 bytes (at speed 1048576)
+[2016-09-12 18:54:50,615 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:54:50,615 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731685
+[2016-09-12 18:54:50,617 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731683, 1473731684, 1473731685]
+[2016-09-12 18:54:50,617 DEBUG Engine.consolidator] Merging into 1473731683
+[2016-09-12 18:54:50,617 DEBUG Engine.consolidator] Merging 1473731683
+[2016-09-12 18:54:50,619 DEBUG root] 1473731683 Alert: avg-rt>150ms for 3 sec: True
+[2016-09-12 18:54:50,622 DEBUG Engine.consolidator] Processed datapoint: 1473731683/None
+[2016-09-12 18:54:50,622 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:50,624 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:50,624 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:50,624 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:50,635 DEBUG Engine] Iteration took 0.024 sec, sleeping for 0.976 sec...
+[2016-09-12 18:54:51,611 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:51,612 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:51,614 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:51,614 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 21 / 2108 bytes (at speed 1048576)
+[2016-09-12 18:54:51,614 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:54:51,615 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2016-09-12 18:54:51,619 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731686
+[2016-09-12 18:54:51,620 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731687
+[2016-09-12 18:54:51,622 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731684, 1473731685, 1473731686, 1473731687]
+[2016-09-12 18:54:51,622 DEBUG Engine.consolidator] Merging into 1473731684
+[2016-09-12 18:54:51,622 DEBUG Engine.consolidator] Merging 1473731684
+[2016-09-12 18:54:51,624 DEBUG root] 1473731684 Alert: avg-rt>150ms for 4 sec: True
+[2016-09-12 18:54:51,626 DEBUG Engine.consolidator] Processed datapoint: 1473731684/None
+[2016-09-12 18:54:51,626 DEBUG Engine.consolidator] Merging into 1473731685
+[2016-09-12 18:54:51,626 DEBUG Engine.consolidator] Merging 1473731685
+[2016-09-12 18:54:51,628 DEBUG root] 1473731685 Alert: avg-rt>150ms for 5 sec: True
+[2016-09-12 18:54:51,629 DEBUG Engine.consolidator] Processed datapoint: 1473731685/None
+[2016-09-12 18:54:51,629 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:51,631 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:51,631 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:51,631 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:51,642 DEBUG Engine] Iteration took 0.031 sec, sleeping for 0.969 sec...
+[2016-09-12 18:54:52,612 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x108004f10>
+[2016-09-12 18:54:52,612 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x108004fd0>
+[2016-09-12 18:54:52,613 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:52,613 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 19 / 1910 bytes (at speed 1048576)
+[2016-09-12 18:54:52,613 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2016-09-12 18:54:52,613 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731688
+[2016-09-12 18:54:52,615 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731686, 1473731687, 1473731688]
+[2016-09-12 18:54:52,615 DEBUG Engine.consolidator] Merging into 1473731686
+[2016-09-12 18:54:52,615 DEBUG Engine.consolidator] Merging 1473731686
+[2016-09-12 18:54:52,617 DEBUG root] 1473731686 Alert: avg-rt>150ms for 6 sec: True
+[2016-09-12 18:54:52,619 DEBUG Engine.consolidator] Processed datapoint: 1473731686/None
+[2016-09-12 18:54:52,619 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1095dba90>
+[2016-09-12 18:54:52,620 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x108042a90>
+[2016-09-12 18:54:52,620 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x10965bc50>
+[2016-09-12 18:54:52,620 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x109683e50>
+[2016-09-12 18:54:52,633 DEBUG Engine] Iteration took 0.022 sec, sleeping for 0.978 sec...
+[2016-09-12 18:54:52,908 WARNING Engine] Please wait for graceful shutdown...
+[2016-09-12 18:54:52,912 INFO Engine] Shutting down...
+[2016-09-12 18:54:52,915 DEBUG Engine.local] Shutdown jmeter/simple
+[2016-09-12 18:54:53,916 INFO Engine.jmeter] Sending Shutdown command to JMeter on port 4445...
+[2016-09-12 18:54:58,930 INFO Engine.jmeter] Sending StopTestNow command to JMeter on port 4445...
+[2016-09-12 18:54:59,939 DEBUG Engine.jmeter] JMeter stopped on StopTestNow command
+[2016-09-12 18:54:59,940 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x108004d90>]/{<logging.StreamHandler object at 0x108004d90>: <open file '<stdout>', mode 'w' at 0x1071c2150>}
+[2016-09-12 18:54:59,943 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.yml
+[2016-09-12 18:54:59,964 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.json
+[2016-09-12 18:54:59,965 DEBUG root] Caught exception in try: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 156, in perform
+    self.engine.run()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 139, in run
+    self._wait()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 173, in _wait
+    time.sleep(delay)
+KeyboardInterrupt
+
+[2016-09-12 18:54:59,965 ERROR root] KeyboardInterrupt: 
+[2016-09-12 18:54:59,965 INFO Engine] Post-processing...
+[2016-09-12 18:54:59,965 DEBUG Engine.local] Post-process jmeter/simple
+[2016-09-12 18:54:59,965 DEBUG Engine] Add existing artifact (move=True): /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/modified_requests.jmx
+[2016-09-12 18:54:59,965 DEBUG Engine] No need to copy /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/modified_requests.jmx
+[2016-09-12 18:54:59,967 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/kpi.jtl
+[2016-09-12 18:54:59,967 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 68 / 6909 bytes (at speed 1048576)
+[2016-09-12 18:54:59,968 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2016-09-12 18:54:59,968 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2016-09-12 18:54:59,968 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731689
+[2016-09-12 18:54:59,970 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731690
+[2016-09-12 18:54:59,971 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731691
+[2016-09-12 18:54:59,973 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731692
+[2016-09-12 18:54:59,975 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731693
+[2016-09-12 18:54:59,977 DEBUG Engine.consolidator] Consolidator buffer[7]: [1473731687, 1473731688, 1473731689, 1473731690, 1473731691, 1473731692, 1473731693]
+[2016-09-12 18:54:59,977 DEBUG Engine.consolidator] Merging into 1473731687
+[2016-09-12 18:54:59,977 DEBUG Engine.consolidator] Merging 1473731687
+[2016-09-12 18:54:59,979 DEBUG root] 1473731687 Alert: avg-rt>150ms for 7 sec: True
+[2016-09-12 18:54:59,982 DEBUG Engine.consolidator] Processed datapoint: 1473731687/None
+[2016-09-12 18:54:59,982 DEBUG Engine.consolidator] Merging into 1473731688
+[2016-09-12 18:54:59,982 DEBUG Engine.consolidator] Merging 1473731688
+[2016-09-12 18:54:59,985 DEBUG root] 1473731688 Alert: avg-rt>150ms for 8 sec: True
+[2016-09-12 18:54:59,987 DEBUG Engine.consolidator] Processed datapoint: 1473731688/None
+[2016-09-12 18:54:59,987 DEBUG Engine.consolidator] Merging into 1473731689
+[2016-09-12 18:54:59,987 DEBUG Engine.consolidator] Merging 1473731689
+[2016-09-12 18:54:59,990 DEBUG root] 1473731689 Alert: avg-rt>150ms for 9 sec: True
+[2016-09-12 18:54:59,991 DEBUG Engine.consolidator] Processed datapoint: 1473731689/None
+[2016-09-12 18:54:59,991 DEBUG Engine.consolidator] Merging into 1473731690
+[2016-09-12 18:54:59,991 DEBUG Engine.consolidator] Merging 1473731690
+[2016-09-12 18:54:59,994 WARNING root] Alert: avg-rt>150ms for 10 sec
+[2016-09-12 18:54:59,994 DEBUG root] 1473731690 Failed: avg-rt>150ms for 10 sec: True
+[2016-09-12 18:54:59,995 DEBUG Engine.consolidator] Processed datapoint: 1473731690/None
+[2016-09-12 18:54:59,996 DEBUG Engine.consolidator] Merging into 1473731691
+[2016-09-12 18:54:59,996 DEBUG Engine.consolidator] Merging 1473731691
+[2016-09-12 18:54:59,998 DEBUG root] 1473731691 Failed: avg-rt>150ms for 11 sec: True
+[2016-09-12 18:54:59,999 DEBUG Engine.consolidator] Processed datapoint: 1473731691/None
+[2016-09-12 18:55:00,000 DEBUG Engine.consolidator] Merging into 1473731692
+[2016-09-12 18:55:00,000 DEBUG Engine.consolidator] Merging 1473731692
+[2016-09-12 18:55:00,003 DEBUG root] 1473731692 Failed: avg-rt>150ms for 12 sec: True
+[2016-09-12 18:55:00,004 DEBUG Engine.consolidator] Processed datapoint: 1473731692/None
+[2016-09-12 18:55:00,004 DEBUG Engine.consolidator] Merging into 1473731693
+[2016-09-12 18:55:00,004 DEBUG Engine.consolidator] Merging 1473731693
+[2016-09-12 18:55:00,007 DEBUG root] 1473731693 Failed: avg-rt>150ms for 13 sec: True
+[2016-09-12 18:55:00,008 DEBUG Engine.consolidator] Processed datapoint: 1473731693/None
+[2016-09-12 18:55:00,008 INFO Engine.final_stats] Test duration: 0:00:20
+[2016-09-12 18:55:00,008 INFO Engine.final_stats] Samples count: 224, 41.96% failures
+[2016-09-12 18:55:00,008 INFO Engine.final_stats] Average times: total 1.587, latency 0.774, connect 0.038
+[2016-09-12 18:55:00,008 INFO Engine.final_stats] Percentile 0.0%: 0.090
+[2016-09-12 18:55:00,009 INFO Engine.final_stats] Percentile 50.0%: 1.875
+[2016-09-12 18:55:00,009 INFO Engine.final_stats] Percentile 90.0%: 3.110
+[2016-09-12 18:55:00,009 INFO Engine.final_stats] Percentile 95.0%: 3.382
+[2016-09-12 18:55:00,009 INFO Engine.final_stats] Percentile 99.0%: 5.695
+[2016-09-12 18:55:00,009 INFO Engine.final_stats] Percentile 99.9%: 8.017
+[2016-09-12 18:55:00,009 INFO Engine.final_stats] Percentile 100.0%: 8.017
+[2016-09-12 18:55:00,009 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-09-12 18:55:00,011 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.yml
+[2016-09-12 18:55:00,032 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/effective.json
+[2016-09-12 18:55:00,033 INFO root] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173
+[2016-09-12 18:55:00,033 WARNING root] Done performing with code: 1
+[2016-09-12 18:55:00,033 DEBUG Engine] Add existing artifact (move=True): bzt.log
+[2016-09-12 18:55:00,033 DEBUG Engine] Moving bzt.log to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-54-39.913173/bzt.log

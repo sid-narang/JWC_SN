@@ -1,0 +1,35 @@
+{
+ "scenarios": {
+  "simple": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com/", 
+     "label": "IndexPage"
+    }, 
+    {
+     "url": "http://blazedemo.com/checkout.php", 
+     "label": "CheckoutPage"
+    }
+   ]
+  }
+ }, 
+ "services": [
+  {
+   "module": "passfail", 
+   "criteria": [
+    "avg-rt of IndexPage>150ms for 10s, continue as failed"
+   ]
+  }
+ ], 
+ "execution": {
+  "ramp-up": "60s", 
+  "hold-for": "5m", 
+  "concurrency": 200, 
+  "scenario": "simple"
+ }, 
+ "modules": {
+  "blazemeter": {
+   "test": "Taurus Demo"
+  }
+ }
+}

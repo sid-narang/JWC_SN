@@ -1,0 +1,1316 @@
+[2016-09-12 18:55:09,317 INFO root] Taurus CLI Tool v1.6.8
+[2016-09-12 18:55:09,318 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-09-12 18:55:09,318 DEBUG root] Python: CPython 2.7.10
+[2016-09-12 18:55:09,318 DEBUG root] OS: ('Darwin', 'Sids-MacBook-Pro-2.local', '14.5.0', 'Darwin Kernel Version 14.5.0: Mon Aug 29 21:14:16 PDT 2016; root:xnu-2782.50.6~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2016-09-12 18:55:09,318 INFO root] Starting with configs: ['test.yml']
+[2016-09-12 18:55:09,318 INFO Engine] Configuring...
+[2016-09-12 18:55:09,318 DEBUG Engine] Reading machine configs from: /etc/bzt.d
+[2016-09-12 18:55:09,318 DEBUG Engine] Adding personal config: /Users/sidnarang/.bzt-rc
+[2016-09-12 18:55:09,318 DEBUG Engine.Configuration] Configs: ['/etc/bzt.d/10-base.json', '/etc/bzt.d/99-installID.yml', '/Users/sidnarang/.bzt-rc']
+[2016-09-12 18:55:09,318 DEBUG Engine.Configuration] Reading /etc/bzt.d/10-base.json as JSON
+[2016-09-12 18:55:09,319 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-installID.yml as YAML
+[2016-09-12 18:55:09,319 DEBUG Engine.Configuration] Reading /Users/sidnarang/.bzt-rc as YAML
+[2016-09-12 18:55:09,320 DEBUG Engine.Configuration] Configs: ['test.yml']
+[2016-09-12 18:55:09,320 DEBUG Engine.Configuration] Reading test.yml as YAML
+[2016-09-12 18:55:09,322 DEBUG root] Configs: ['test.yml']
+[2016-09-12 18:55:09,322 DEBUG root] Reading test.yml as YAML
+[2016-09-12 18:55:09,325 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.6.8&installID=c8843905-b92c-4f70-b648-47b394eef70f
+[2016-09-12 18:55:09,775 DEBUG Engine] Result: {"latest":"1.6.8","needsUpgrade":false}
+[2016-09-12 18:55:09,776 DEBUG Engine] Installation is up-to-date
+[2016-09-12 18:55:09,776 INFO Engine] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258
+[2016-09-12 18:55:09,776 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective
+[2016-09-12 18:55:09,779 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.yml
+[2016-09-12 18:55:09,797 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.json
+[2016-09-12 18:55:09,798 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/merged.yml
+[2016-09-12 18:55:09,798 DEBUG root] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/merged.yml
+[2016-09-12 18:55:09,800 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/merged.json
+[2016-09-12 18:55:09,801 DEBUG root] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/merged.json
+[2016-09-12 18:55:09,801 DEBUG Engine] Add existing artifact (move=False): test.yml
+[2016-09-12 18:55:09,801 DEBUG Engine] Copying test.yml to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/test.yml
+[2016-09-12 18:55:09,801 INFO Engine] Preparing...
+[2016-09-12 18:55:09,801 DEBUG Engine] Module config: consolidator defaultdict(None, {u'ignore-labels': [u'ignore'], u'percentiles': [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0], u'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2016-09-12 18:55:09,802 DEBUG root] Importing module: bzt.modules.aggregator
+[2016-09-12 18:55:09,803 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/Library/Python/2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2016-09-12 18:55:09,803 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2016-09-12 18:55:09,803 DEBUG Engine] Module config: monitoring defaultdict(None, {u'class': u'bzt.modules.monitoring.Monitoring'})
+[2016-09-12 18:55:09,803 DEBUG root] Importing module: bzt.modules.monitoring
+[2016-09-12 18:55:09,816 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/Library/Python/2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2016-09-12 18:55:09,816 DEBUG Engine] Module config: passfail defaultdict(None, {u'class': u'bzt.modules.passfail.PassFailStatus'})
+[2016-09-12 18:55:09,816 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 18:55:09,816 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 18:55:09,817 DEBUG root] Importing module: bzt.modules.passfail
+[2016-09-12 18:55:09,817 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/Library/Python/2.7/site-packages/bzt/modules/passfail.pyc'>
+[2016-09-12 18:55:09,817 DEBUG Engine] Module config: local defaultdict(None, {u'class': u'bzt.modules.provisioning.Local'})
+[2016-09-12 18:55:09,817 DEBUG root] Importing module: bzt.modules.provisioning
+[2016-09-12 18:55:09,817 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/Library/Python/2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2016-09-12 18:55:09,818 DEBUG Engine] Module config: jmeter defaultdict(None, {u'path': u'~/.bzt/jmeter-taurus/', u'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], u'properties': defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeterengine.force.system.exit': u'true', u'jmeter.save.saveservice.connect_time': u'true', u'summariser.name': u'', u'mode': u'Stripped'}), u'class': u'bzt.modules.jmeter.JMeterExecutor'})
+[2016-09-12 18:55:09,818 DEBUG root] Importing module: bzt.modules.jmeter
+[2016-09-12 18:55:09,823 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/Library/Python/2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2016-09-12 18:55:09,823 DEBUG Engine.local] Preparing executor: jmeter/4420960912
+[2016-09-12 18:55:09,823 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/jmeter.log
+[2016-09-12 18:55:09,823 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2016-09-12 18:55:09,824 DEBUG Engine.jmeter] Port 4445 is free
+[2016-09-12 18:55:09,824 DEBUG Engine.jmeter] Using port 4445 for management
+[2016-09-12 18:55:09,824 DEBUG Engine.jmeter.JavaVM] Trying: ['java', '-version']
+[2016-09-12 18:55:09,900 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_45"
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+
+[2016-09-12 18:55:09,900 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2016-09-12 18:55:09,901 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh
+[2016-09-12 18:55:09,904 DEBUG bzt.utils] Executing shell: [u'/Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh', '-j', '/var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/jmeterOApuBVlog', '--version']
+[2016-09-12 18:55:10,192 DEBUG Engine.jmeter.JMeter] JMeter check: Copyright (c) 1998-2015 The Apache Software Foundation
+Version 2.13 r1665067
+ / None
+[2016-09-12 18:55:10,193 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/requests.jmx
+[2016-09-12 18:55:10,195 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/requests.jmx
+[2016-09-12 18:55:10,196 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=200, throughput=None, ramp_up=60.0, hold=300.0, iterations=0, duration=360.0, steps=None)
+[2016-09-12 18:55:10,197 DEBUG Engine.jmeter] Original threads: 1.0
+[2016-09-12 18:55:10,198 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:10,198 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/error.jtl
+[2016-09-12 18:55:10,199 DEBUG Engine.jmeter] Enforcing parent sample for transaction controller
+[2016-09-12 18:55:10,199 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/modified_requests.jmx
+[2016-09-12 18:55:10,199 DEBUG JMX] Saving JMX to: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/modified_requests.jmx
+[2016-09-12 18:55:10,200 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258', u'summariser.name': u'', u'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', u'mode': u'Stripped', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2016-09-12 18:55:10,200 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/jmeter-bzt.properties
+[2016-09-12 18:55:10,200 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2016-09-12 18:55:10,200 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/system.properties
+[2016-09-12 18:55:10,201 DEBUG Engine] Module config: final_stats defaultdict(None, {u'class': u'bzt.modules.reporting.FinalStatus'})
+[2016-09-12 18:55:10,201 DEBUG root] Importing module: bzt.modules.reporting
+[2016-09-12 18:55:10,204 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/Library/Python/2.7/site-packages/bzt/modules/reporting.pyc'>
+[2016-09-12 18:55:10,204 DEBUG Engine] Module config: console defaultdict(None, {u'disable': False, u'class': u'bzt.modules.console.ConsoleStatusReporter'})
+[2016-09-12 18:55:10,204 DEBUG root] Importing module: bzt.modules.console
+[2016-09-12 18:55:10,204 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/Library/Python/2.7/site-packages/bzt/modules/console.pyc'>
+[2016-09-12 18:55:10,211 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.yml
+[2016-09-12 18:55:10,234 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.json
+[2016-09-12 18:55:10,235 INFO Engine] Starting...
+[2016-09-12 18:55:10,235 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:10,235 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:10,235 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:10,235 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:10,235 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:10,235 INFO Engine.console] Waiting for results...
+[2016-09-12 18:55:10,235 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:10,235 DEBUG Engine.local] Delay setup: 0(start-at) + 0(delay) = 0
+[2016-09-12 18:55:10,237 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.yml
+[2016-09-12 18:55:10,260 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.json
+[2016-09-12 18:55:10,261 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:10,261 DEBUG bzt.utils] Executing shell: [u'/Users/sidnarang/.bzt/jmeter-taurus/bin/jmeter.sh', '-n', '-t', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/modified_requests.jmx', '-j', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/jmeter.log', '-q', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/jmeter-bzt.properties', '-S', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/system.properties']
+[2016-09-12 18:55:10,264 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:10,265 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/error.jtl
+[2016-09-12 18:55:10,265 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:10,265 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-09-12 18:55:10,265 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 18:55:10,265 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 18:55:10,265 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:10,467 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:10,467 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:10,467 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:10,467 DEBUG Engine.console] Overriding logging streams
+[2016-09-12 18:55:10,467 DEBUG Engine.console] Redirected logging streams, [<logging.StreamHandler object at 0x106228d90>]/{<logging.StreamHandler object at 0x106228d90>: <open file '<stdout>', mode 'w' at 0x1053e8150>}
+[2016-09-12 18:55:10,468 INFO Engine.console] Waiting for finish...
+[2016-09-12 18:55:10,490 DEBUG Engine] Iteration took 0.229 sec, sleeping for 0.771 sec...
+[2016-09-12 18:55:11,265 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:11,266 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:11,266 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/error.jtl
+[2016-09-12 18:55:11,266 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Opening file: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:11,266 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:11,266 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 1 / 119 bytes (at speed 1048576)
+[2016-09-12 18:55:11,269 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Analyzed header line: ['timeStamp', 'elapsed', 'label', 'responseCode', 'responseMessage', 'threadName', 'success', 'grpThreads', 'allThreads', 'Latency', 'Hostname', 'Connect']
+[2016-09-12 18:55:11,269 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 18:55:11,269 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 18:55:11,269 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:11,271 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:11,271 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:11,271 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:11,275 DEBUG Engine] Iteration took 0.010 sec, sleeping for 0.990 sec...
+[2016-09-12 18:55:12,266 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:12,266 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:12,266 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/error.jtl
+[2016-09-12 18:55:12,266 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:12,266 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-09-12 18:55:12,266 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-09-12 18:55:12,266 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-12 18:55:12,267 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:12,269 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:12,269 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:12,269 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:12,273 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 18:55:13,266 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:13,266 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:13,266 DEBUG Engine.jmeter.JTLErrorsReader] Opening /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/error.jtl
+[2016-09-12 18:55:13,266 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:13,266 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 3 / 289 bytes (at speed 1048576)
+[2016-09-12 18:55:13,267 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-09-12 18:55:13,267 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731710
+[2016-09-12 18:55:13,267 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731711
+[2016-09-12 18:55:13,268 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731710, 1473731711]
+[2016-09-12 18:55:13,268 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:13,269 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:13,270 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:13,270 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:13,273 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-12 18:55:14,269 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:14,269 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:14,270 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:14,270 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 7 / 700 bytes (at speed 1048576)
+[2016-09-12 18:55:14,270 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731711 into 1473731712
+[2016-09-12 18:55:14,270 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731711 into 1473731712
+[2016-09-12 18:55:14,271 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-09-12 18:55:14,271 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2016-09-12 18:55:14,274 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731710, 1473731711]
+[2016-09-12 18:55:14,274 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:14,276 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:14,276 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:14,276 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:14,280 DEBUG Engine] Iteration took 0.011 sec, sleeping for 0.989 sec...
+[2016-09-12 18:55:15,269 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:15,270 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:15,270 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:15,270 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 5 / 499 bytes (at speed 1048576)
+[2016-09-12 18:55:15,270 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-09-12 18:55:15,270 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731710, 1473731711]
+[2016-09-12 18:55:15,270 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:15,272 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:15,272 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:15,272 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:15,276 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-12 18:55:16,272 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:16,272 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:16,274 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:16,274 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 16 / 1599 bytes (at speed 1048576)
+[2016-09-12 18:55:16,274 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2016-09-12 18:55:16,274 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731712
+[2016-09-12 18:55:16,275 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731712, 1473731710, 1473731711]
+[2016-09-12 18:55:16,275 DEBUG Engine.consolidator] Merging into 1473731710
+[2016-09-12 18:55:16,275 DEBUG Engine.consolidator] Merging 1473731710
+[2016-09-12 18:55:16,276 DEBUG root] 1473731710 Alert: avg-rt>150ms for 1 sec: True
+[2016-09-12 18:55:16,277 DEBUG Engine.consolidator] Processed datapoint: 1473731710/None
+[2016-09-12 18:55:16,277 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:16,278 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:16,278 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:16,278 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:16,290 DEBUG Engine] Iteration took 0.018 sec, sleeping for 0.982 sec...
+[2016-09-12 18:55:17,275 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:17,276 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:17,277 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:17,277 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 12 / 1202 bytes (at speed 1048576)
+[2016-09-12 18:55:17,278 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2016-09-12 18:55:17,278 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2016-09-12 18:55:17,282 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731712, 1473731711]
+[2016-09-12 18:55:17,282 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:17,284 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:17,284 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:17,284 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:17,307 DEBUG Engine] Iteration took 0.032 sec, sleeping for 0.968 sec...
+[2016-09-12 18:55:18,278 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:18,278 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:18,281 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:18,281 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 20 / 2005 bytes (at speed 1048576)
+[2016-09-12 18:55:18,281 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:18,281 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731713
+[2016-09-12 18:55:18,283 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731712, 1473731713, 1473731711]
+[2016-09-12 18:55:18,283 DEBUG Engine.consolidator] Merging into 1473731711
+[2016-09-12 18:55:18,283 DEBUG Engine.consolidator] Merging 1473731711
+[2016-09-12 18:55:18,284 DEBUG root] 1473731711 Alert: avg-rt>150ms for 2 sec: True
+[2016-09-12 18:55:18,285 DEBUG Engine.consolidator] Processed datapoint: 1473731711/None
+[2016-09-12 18:55:18,286 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:18,287 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:18,287 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:18,287 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:18,305 DEBUG Engine] Iteration took 0.027 sec, sleeping for 0.973 sec...
+[2016-09-12 18:55:19,282 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:19,283 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:19,284 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:19,284 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 19 / 1902 bytes (at speed 1048576)
+[2016-09-12 18:55:19,285 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:19,285 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731714
+[2016-09-12 18:55:19,286 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731712, 1473731713, 1473731714]
+[2016-09-12 18:55:19,286 DEBUG Engine.consolidator] Merging into 1473731712
+[2016-09-12 18:55:19,286 DEBUG Engine.consolidator] Merging 1473731712
+[2016-09-12 18:55:19,287 DEBUG root] 1473731712 Alert: avg-rt>150ms for 3 sec: True
+[2016-09-12 18:55:19,289 DEBUG Engine.consolidator] Processed datapoint: 1473731712/None
+[2016-09-12 18:55:19,289 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:19,290 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:19,290 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:19,290 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:19,312 DEBUG Engine] Iteration took 0.030 sec, sleeping for 0.970 sec...
+[2016-09-12 18:55:20,283 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:20,283 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:20,284 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:20,284 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 19 / 1902 bytes (at speed 1048576)
+[2016-09-12 18:55:20,285 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:20,285 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731715
+[2016-09-12 18:55:20,286 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731713, 1473731714, 1473731715]
+[2016-09-12 18:55:20,286 DEBUG Engine.consolidator] Merging into 1473731713
+[2016-09-12 18:55:20,286 DEBUG Engine.consolidator] Merging 1473731713
+[2016-09-12 18:55:20,288 DEBUG root] 1473731713 Alert: avg-rt>150ms for 4 sec: True
+[2016-09-12 18:55:20,290 DEBUG Engine.consolidator] Processed datapoint: 1473731713/None
+[2016-09-12 18:55:20,290 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:20,291 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:20,291 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:20,291 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:20,312 DEBUG Engine] Iteration took 0.029 sec, sleeping for 0.971 sec...
+[2016-09-12 18:55:21,283 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:21,283 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:21,285 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:21,285 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 22 / 2220 bytes (at speed 1048576)
+[2016-09-12 18:55:21,285 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:21,285 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731716
+[2016-09-12 18:55:21,287 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731714, 1473731715, 1473731716]
+[2016-09-12 18:55:21,287 DEBUG Engine.consolidator] Merging into 1473731714
+[2016-09-12 18:55:21,287 DEBUG Engine.consolidator] Merging 1473731714
+[2016-09-12 18:55:21,289 DEBUG root] 1473731714 Alert: avg-rt>150ms for 5 sec: True
+[2016-09-12 18:55:21,290 DEBUG Engine.consolidator] Processed datapoint: 1473731714/None
+[2016-09-12 18:55:21,291 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:21,292 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:21,292 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:21,292 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:21,326 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-09-12 18:55:22,283 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:22,283 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:22,284 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:22,284 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 14 / 1385 bytes (at speed 1048576)
+[2016-09-12 18:55:22,285 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2016-09-12 18:55:22,285 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731715, 1473731716]
+[2016-09-12 18:55:22,285 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:22,286 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:22,286 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:22,286 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:22,297 DEBUG Engine] Iteration took 0.014 sec, sleeping for 0.986 sec...
+[2016-09-12 18:55:23,284 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:23,284 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:23,286 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:23,286 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 21 / 2116 bytes (at speed 1048576)
+[2016-09-12 18:55:23,287 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:23,287 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731717
+[2016-09-12 18:55:23,289 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731715, 1473731716, 1473731717]
+[2016-09-12 18:55:23,289 DEBUG Engine.consolidator] Merging into 1473731715
+[2016-09-12 18:55:23,289 DEBUG Engine.consolidator] Merging 1473731715
+[2016-09-12 18:55:23,291 DEBUG root] 1473731715 Alert: avg-rt>150ms for 6 sec: True
+[2016-09-12 18:55:23,293 DEBUG Engine.consolidator] Processed datapoint: 1473731715/None
+[2016-09-12 18:55:23,293 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:23,294 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:23,294 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:23,294 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:23,312 DEBUG Engine] Iteration took 0.028 sec, sleeping for 0.972 sec...
+[2016-09-12 18:55:24,287 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:24,287 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:24,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:24,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 12 / 1195 bytes (at speed 1048576)
+[2016-09-12 18:55:24,289 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:24,289 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731718
+[2016-09-12 18:55:24,293 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731716, 1473731717, 1473731718]
+[2016-09-12 18:55:24,293 DEBUG Engine.consolidator] Merging into 1473731716
+[2016-09-12 18:55:24,293 DEBUG Engine.consolidator] Merging 1473731716
+[2016-09-12 18:55:24,299 DEBUG root] 1473731716 Alert: avg-rt>150ms for 7 sec: True
+[2016-09-12 18:55:24,302 DEBUG Engine.consolidator] Processed datapoint: 1473731716/None
+[2016-09-12 18:55:24,302 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:24,303 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:24,303 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:24,304 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:24,324 DEBUG Engine] Iteration took 0.037 sec, sleeping for 0.963 sec...
+[2016-09-12 18:55:25,287 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:25,287 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:25,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:25,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1110 bytes (at speed 1048576)
+[2016-09-12 18:55:25,289 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:25,290 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731719
+[2016-09-12 18:55:25,292 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731717, 1473731718, 1473731719]
+[2016-09-12 18:55:25,292 DEBUG Engine.consolidator] Merging into 1473731717
+[2016-09-12 18:55:25,292 DEBUG Engine.consolidator] Merging 1473731717
+[2016-09-12 18:55:25,294 DEBUG root] 1473731717 Alert: avg-rt>150ms for 8 sec: True
+[2016-09-12 18:55:25,296 DEBUG Engine.consolidator] Processed datapoint: 1473731717/None
+[2016-09-12 18:55:25,296 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:25,297 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:25,297 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:25,297 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:25,315 DEBUG Engine] Iteration took 0.028 sec, sleeping for 0.972 sec...
+[2016-09-12 18:55:26,287 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:26,288 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:26,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:26,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 16 / 1573 bytes (at speed 1048576)
+[2016-09-12 18:55:26,290 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:26,290 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731720
+[2016-09-12 18:55:26,293 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731718, 1473731719, 1473731720]
+[2016-09-12 18:55:26,293 DEBUG Engine.consolidator] Merging into 1473731718
+[2016-09-12 18:55:26,293 DEBUG Engine.consolidator] Merging 1473731718
+[2016-09-12 18:55:26,296 DEBUG root] 1473731718 Alert: avg-rt>150ms for 9 sec: True
+[2016-09-12 18:55:26,298 DEBUG Engine.consolidator] Processed datapoint: 1473731718/None
+[2016-09-12 18:55:26,298 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:26,299 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:26,299 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:26,299 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:26,318 DEBUG Engine] Iteration took 0.030 sec, sleeping for 0.970 sec...
+[2016-09-12 18:55:27,288 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:27,288 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:27,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:27,289 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 18 / 1791 bytes (at speed 1048576)
+[2016-09-12 18:55:27,289 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731720 into 1473731721
+[2016-09-12 18:55:27,289 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731720 into 1473731721
+[2016-09-12 18:55:27,290 DEBUG Engine.jmeter.JTLReader] Buffer len: 6
+[2016-09-12 18:55:27,290 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 6s
+[2016-09-12 18:55:27,298 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731719, 1473731720]
+[2016-09-12 18:55:27,298 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:27,300 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:27,300 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:27,300 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:27,308 DEBUG Engine] Iteration took 0.020 sec, sleeping for 0.980 sec...
+[2016-09-12 18:55:28,290 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:28,291 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:28,293 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:28,293 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 19 / 2069 bytes (at speed 1048576)
+[2016-09-12 18:55:28,294 DEBUG Engine.jmeter.JTLReader] Buffer len: 7
+[2016-09-12 18:55:28,294 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731721
+[2016-09-12 18:55:28,296 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731719, 1473731720, 1473731721]
+[2016-09-12 18:55:28,296 DEBUG Engine.consolidator] Merging into 1473731719
+[2016-09-12 18:55:28,296 DEBUG Engine.consolidator] Merging 1473731719
+[2016-09-12 18:55:28,299 WARNING root] Alert: avg-rt>150ms for 10 sec
+[2016-09-12 18:55:28,306 DEBUG root] 1473731719 Failed: avg-rt>150ms for 10 sec: True
+[2016-09-12 18:55:28,307 DEBUG Engine.consolidator] Processed datapoint: 1473731719/None
+[2016-09-12 18:55:28,307 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:28,308 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:28,308 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:28,308 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:28,327 DEBUG Engine] Iteration took 0.037 sec, sleeping for 0.963 sec...
+[2016-09-12 18:55:29,291 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:29,291 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:29,292 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:29,292 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 10 / 1021 bytes (at speed 1048576)
+[2016-09-12 18:55:29,293 DEBUG Engine.jmeter.JTLReader] Buffer len: 7
+[2016-09-12 18:55:29,293 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 8s
+[2016-09-12 18:55:29,301 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731720, 1473731721]
+[2016-09-12 18:55:29,301 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:29,302 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:29,302 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:29,302 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:29,310 DEBUG Engine] Iteration took 0.019 sec, sleeping for 0.981 sec...
+[2016-09-12 18:55:30,293 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:30,293 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:30,294 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:30,294 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 14 / 1385 bytes (at speed 1048576)
+[2016-09-12 18:55:30,295 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731721 into 1473731722
+[2016-09-12 18:55:30,295 DEBUG Engine.jmeter.JTLReader] Buffer len: 8
+[2016-09-12 18:55:30,295 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731720, 1473731721]
+[2016-09-12 18:55:30,295 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:30,296 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:30,297 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:30,297 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:30,307 DEBUG Engine] Iteration took 0.014 sec, sleeping for 0.986 sec...
+[2016-09-12 18:55:31,293 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:31,293 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:31,294 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:31,295 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 10 / 1014 bytes (at speed 1048576)
+[2016-09-12 18:55:31,295 DEBUG Engine.jmeter.JTLReader] Buffer len: 9
+[2016-09-12 18:55:31,295 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731722
+[2016-09-12 18:55:31,297 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731720, 1473731721, 1473731722]
+[2016-09-12 18:55:31,297 DEBUG Engine.consolidator] Merging into 1473731720
+[2016-09-12 18:55:31,297 DEBUG Engine.consolidator] Merging 1473731720
+[2016-09-12 18:55:31,300 DEBUG root] 1473731720 Failed: avg-rt>150ms for 11 sec: True
+[2016-09-12 18:55:31,301 DEBUG Engine.consolidator] Processed datapoint: 1473731720/None
+[2016-09-12 18:55:31,301 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:31,302 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:31,302 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:31,302 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:31,323 DEBUG Engine] Iteration took 0.030 sec, sleeping for 0.970 sec...
+[2016-09-12 18:55:32,296 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:32,296 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:32,297 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:32,297 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 4 / 400 bytes (at speed 1048576)
+[2016-09-12 18:55:32,297 DEBUG Engine.jmeter.JTLReader] Buffer len: 9
+[2016-09-12 18:55:32,297 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731723
+[2016-09-12 18:55:32,300 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731721, 1473731722, 1473731723]
+[2016-09-12 18:55:32,301 DEBUG Engine.consolidator] Merging into 1473731721
+[2016-09-12 18:55:32,301 DEBUG Engine.consolidator] Merging 1473731721
+[2016-09-12 18:55:32,304 DEBUG root] 1473731721 Failed: avg-rt>150ms for 12 sec: True
+[2016-09-12 18:55:32,306 DEBUG Engine.consolidator] Processed datapoint: 1473731721/None
+[2016-09-12 18:55:32,306 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:32,307 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:32,307 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:32,307 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:32,326 DEBUG Engine] Iteration took 0.030 sec, sleeping for 0.970 sec...
+[2016-09-12 18:55:33,298 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:33,298 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:33,299 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:33,299 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 19 / 1890 bytes (at speed 1048576)
+[2016-09-12 18:55:33,300 DEBUG Engine.jmeter.JTLReader] Buffer len: 9
+[2016-09-12 18:55:33,300 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731724
+[2016-09-12 18:55:33,303 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731722, 1473731723, 1473731724]
+[2016-09-12 18:55:33,304 DEBUG Engine.consolidator] Merging into 1473731722
+[2016-09-12 18:55:33,304 DEBUG Engine.consolidator] Merging 1473731722
+[2016-09-12 18:55:33,307 DEBUG root] 1473731722 Failed: avg-rt>150ms for 13 sec: True
+[2016-09-12 18:55:33,309 DEBUG Engine.consolidator] Processed datapoint: 1473731722/None
+[2016-09-12 18:55:33,309 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:33,310 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:33,310 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:33,310 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:33,331 DEBUG Engine] Iteration took 0.033 sec, sleeping for 0.967 sec...
+[2016-09-12 18:55:34,301 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:34,301 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:34,303 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:34,303 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 16 / 1733 bytes (at speed 1048576)
+[2016-09-12 18:55:34,304 DEBUG Engine.jmeter.JTLReader] Buffer len: 9
+[2016-09-12 18:55:34,304 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 9s
+[2016-09-12 18:55:34,313 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731723, 1473731724]
+[2016-09-12 18:55:34,313 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:34,314 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:34,314 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:34,314 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:34,323 DEBUG Engine] Iteration took 0.022 sec, sleeping for 0.978 sec...
+[2016-09-12 18:55:35,304 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:35,304 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:35,305 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:35,305 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 1009 bytes (at speed 1048576)
+[2016-09-12 18:55:35,306 DEBUG Engine.jmeter.JTLReader] Buffer len: 10
+[2016-09-12 18:55:35,306 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731725
+[2016-09-12 18:55:35,309 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731723, 1473731724, 1473731725]
+[2016-09-12 18:55:35,309 DEBUG Engine.consolidator] Merging into 1473731723
+[2016-09-12 18:55:35,309 DEBUG Engine.consolidator] Merging 1473731723
+[2016-09-12 18:55:35,313 DEBUG root] 1473731723 Failed: avg-rt>150ms for 14 sec: True
+[2016-09-12 18:55:35,315 DEBUG Engine.consolidator] Processed datapoint: 1473731723/None
+[2016-09-12 18:55:35,315 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:35,316 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:35,316 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:35,316 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:35,338 DEBUG Engine] Iteration took 0.034 sec, sleeping for 0.966 sec...
+[2016-09-12 18:55:36,305 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:36,305 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:36,306 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:36,306 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 13 / 1311 bytes (at speed 1048576)
+[2016-09-12 18:55:36,307 DEBUG Engine.jmeter.JTLReader] Buffer len: 10
+[2016-09-12 18:55:36,307 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731726
+[2016-09-12 18:55:36,309 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731724, 1473731725, 1473731726]
+[2016-09-12 18:55:36,309 DEBUG Engine.consolidator] Merging into 1473731724
+[2016-09-12 18:55:36,309 DEBUG Engine.consolidator] Merging 1473731724
+[2016-09-12 18:55:36,313 DEBUG root] 1473731724 Failed: avg-rt>150ms for 15 sec: True
+[2016-09-12 18:55:36,315 DEBUG Engine.consolidator] Processed datapoint: 1473731724/None
+[2016-09-12 18:55:36,315 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:36,316 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:36,316 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:36,316 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:36,339 DEBUG Engine] Iteration took 0.033 sec, sleeping for 0.967 sec...
+[2016-09-12 18:55:37,307 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:37,307 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:37,308 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:37,309 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 15 / 1502 bytes (at speed 1048576)
+[2016-09-12 18:55:37,309 DEBUG Engine.jmeter.JTLReader] Buffer len: 10
+[2016-09-12 18:55:37,309 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731727
+[2016-09-12 18:55:37,313 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731725, 1473731726, 1473731727]
+[2016-09-12 18:55:37,313 DEBUG Engine.consolidator] Merging into 1473731725
+[2016-09-12 18:55:37,313 DEBUG Engine.consolidator] Merging 1473731725
+[2016-09-12 18:55:37,318 DEBUG root] 1473731725 Failed: avg-rt>150ms for 16 sec: True
+[2016-09-12 18:55:37,320 DEBUG Engine.consolidator] Processed datapoint: 1473731725/None
+[2016-09-12 18:55:37,320 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:37,321 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:37,322 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:37,322 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:37,345 DEBUG Engine] Iteration took 0.038 sec, sleeping for 0.962 sec...
+[2016-09-12 18:55:38,308 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:38,309 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:38,310 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:38,310 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 20 / 1993 bytes (at speed 1048576)
+[2016-09-12 18:55:38,311 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731724 into 1473731728
+[2016-09-12 18:55:38,311 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731724 into 1473731728
+[2016-09-12 18:55:38,311 DEBUG Engine.jmeter.JTLReader] Buffer len: 10
+[2016-09-12 18:55:38,312 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 11s
+[2016-09-12 18:55:38,322 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731726, 1473731727]
+[2016-09-12 18:55:38,322 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:38,324 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:38,324 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:38,324 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:38,334 DEBUG Engine] Iteration took 0.026 sec, sleeping for 0.974 sec...
+[2016-09-12 18:55:39,310 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:39,311 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:39,313 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:39,313 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 17 / 1726 bytes (at speed 1048576)
+[2016-09-12 18:55:39,314 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731727 into 1473731728
+[2016-09-12 18:55:39,314 DEBUG Engine.jmeter.JTLReader] Buffer len: 11
+[2016-09-12 18:55:39,314 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731726, 1473731727]
+[2016-09-12 18:55:39,314 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:39,316 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:39,316 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:39,316 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:39,326 DEBUG Engine] Iteration took 0.015 sec, sleeping for 0.985 sec...
+[2016-09-12 18:55:40,314 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:40,315 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:40,316 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:40,316 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 887 bytes (at speed 1048576)
+[2016-09-12 18:55:40,316 DEBUG Engine.jmeter.JTLReader] Buffer len: 12
+[2016-09-12 18:55:40,316 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731728
+[2016-09-12 18:55:40,321 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731728, 1473731726, 1473731727]
+[2016-09-12 18:55:40,321 DEBUG Engine.consolidator] Merging into 1473731726
+[2016-09-12 18:55:40,321 DEBUG Engine.consolidator] Merging 1473731726
+[2016-09-12 18:55:40,326 DEBUG root] 1473731726 Failed: avg-rt>150ms for 17 sec: True
+[2016-09-12 18:55:40,328 DEBUG Engine.consolidator] Processed datapoint: 1473731726/None
+[2016-09-12 18:55:40,328 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:40,329 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:40,329 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:40,329 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:40,350 DEBUG Engine] Iteration took 0.036 sec, sleeping for 0.964 sec...
+[2016-09-12 18:55:41,316 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:41,316 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:41,317 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:41,317 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 15 / 1528 bytes (at speed 1048576)
+[2016-09-12 18:55:41,318 DEBUG Engine.jmeter.JTLReader] Buffer len: 12
+[2016-09-12 18:55:41,318 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 12s
+[2016-09-12 18:55:41,325 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731728, 1473731727]
+[2016-09-12 18:55:41,325 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:41,326 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:41,326 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:41,327 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:41,335 DEBUG Engine] Iteration took 0.019 sec, sleeping for 0.981 sec...
+[2016-09-12 18:55:42,320 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:42,320 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:42,322 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:42,322 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 13 / 1453 bytes (at speed 1048576)
+[2016-09-12 18:55:42,323 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:55:42,323 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731729
+[2016-09-12 18:55:42,326 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731728, 1473731729, 1473731727]
+[2016-09-12 18:55:42,326 DEBUG Engine.consolidator] Merging into 1473731727
+[2016-09-12 18:55:42,326 DEBUG Engine.consolidator] Merging 1473731727
+[2016-09-12 18:55:42,331 DEBUG root] 1473731727 Failed: avg-rt>150ms for 18 sec: True
+[2016-09-12 18:55:42,332 DEBUG Engine.consolidator] Processed datapoint: 1473731727/None
+[2016-09-12 18:55:42,332 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:42,333 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:42,334 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:42,334 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:42,360 DEBUG Engine] Iteration took 0.040 sec, sleeping for 0.960 sec...
+[2016-09-12 18:55:43,323 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:43,323 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:43,324 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:43,325 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 17 / 1726 bytes (at speed 1048576)
+[2016-09-12 18:55:43,325 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731728 into 1473731730
+[2016-09-12 18:55:43,325 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:55:43,326 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731730
+[2016-09-12 18:55:43,329 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731728, 1473731729, 1473731730]
+[2016-09-12 18:55:43,329 DEBUG Engine.consolidator] Merging into 1473731728
+[2016-09-12 18:55:43,329 DEBUG Engine.consolidator] Merging 1473731728
+[2016-09-12 18:55:43,334 DEBUG root] 1473731728 Failed: avg-rt>150ms for 19 sec: True
+[2016-09-12 18:55:43,335 DEBUG Engine.consolidator] Processed datapoint: 1473731728/None
+[2016-09-12 18:55:43,335 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:43,337 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:43,338 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:43,338 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:43,366 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-09-12 18:55:44,323 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:44,323 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:44,324 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:44,325 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 13 / 1429 bytes (at speed 1048576)
+[2016-09-12 18:55:44,325 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:55:44,325 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 13s
+[2016-09-12 18:55:44,335 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731729, 1473731730]
+[2016-09-12 18:55:44,335 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:44,337 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:44,337 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:44,337 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:44,348 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-09-12 18:55:45,326 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:45,326 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:45,327 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:45,327 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 13 / 1318 bytes (at speed 1048576)
+[2016-09-12 18:55:45,327 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:55:45,327 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731731
+[2016-09-12 18:55:45,331 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731729, 1473731730, 1473731731]
+[2016-09-12 18:55:45,331 DEBUG Engine.consolidator] Merging into 1473731729
+[2016-09-12 18:55:45,331 DEBUG Engine.consolidator] Merging 1473731729
+[2016-09-12 18:55:45,336 DEBUG root] 1473731729 Failed: avg-rt>150ms for 20 sec: True
+[2016-09-12 18:55:45,337 DEBUG Engine.consolidator] Processed datapoint: 1473731729/None
+[2016-09-12 18:55:45,337 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:45,339 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:45,339 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:45,339 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:45,369 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-09-12 18:55:46,330 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:46,330 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:46,332 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:46,332 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 14 / 1577 bytes (at speed 1048576)
+[2016-09-12 18:55:46,333 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:55:46,333 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731732
+[2016-09-12 18:55:46,337 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731733
+[2016-09-12 18:55:46,342 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731730, 1473731731, 1473731732, 1473731733]
+[2016-09-12 18:55:46,342 DEBUG Engine.consolidator] Merging into 1473731730
+[2016-09-12 18:55:46,342 DEBUG Engine.consolidator] Merging 1473731730
+[2016-09-12 18:55:46,347 DEBUG root] 1473731730 Failed: avg-rt>150ms for 21 sec: True
+[2016-09-12 18:55:46,349 DEBUG Engine.consolidator] Processed datapoint: 1473731730/None
+[2016-09-12 18:55:46,349 DEBUG Engine.consolidator] Merging into 1473731731
+[2016-09-12 18:55:46,349 DEBUG Engine.consolidator] Merging 1473731731
+[2016-09-12 18:55:46,353 DEBUG root] 1473731731 Failed: avg-rt>150ms for 22 sec: True
+[2016-09-12 18:55:46,356 DEBUG Engine.consolidator] Processed datapoint: 1473731731/None
+[2016-09-12 18:55:46,356 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:46,358 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:46,358 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:46,358 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:46,384 DEBUG Engine] Iteration took 0.054 sec, sleeping for 0.946 sec...
+[2016-09-12 18:55:47,330 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:47,331 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:47,332 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:47,332 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 14 / 1525 bytes (at speed 1048576)
+[2016-09-12 18:55:47,333 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:55:47,333 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731732, 1473731733]
+[2016-09-12 18:55:47,333 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:47,335 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:47,335 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:47,335 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:47,346 DEBUG Engine] Iteration took 0.016 sec, sleeping for 0.984 sec...
+[2016-09-12 18:55:48,333 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:48,334 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:48,335 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:48,335 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 22 / 2373 bytes (at speed 1048576)
+[2016-09-12 18:55:48,335 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:55:48,335 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731734
+[2016-09-12 18:55:48,338 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731732, 1473731733, 1473731734]
+[2016-09-12 18:55:48,338 DEBUG Engine.consolidator] Merging into 1473731732
+[2016-09-12 18:55:48,338 DEBUG Engine.consolidator] Merging 1473731732
+[2016-09-12 18:55:48,342 DEBUG root] 1473731732 Failed: avg-rt>150ms for 23 sec: True
+[2016-09-12 18:55:48,344 DEBUG Engine.consolidator] Processed datapoint: 1473731732/None
+[2016-09-12 18:55:48,344 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:48,345 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:48,345 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:48,345 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:48,372 DEBUG Engine] Iteration took 0.039 sec, sleeping for 0.961 sec...
+[2016-09-12 18:55:49,337 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:49,337 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:49,338 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:49,338 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 7 / 724 bytes (at speed 1048576)
+[2016-09-12 18:55:49,338 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:55:49,338 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731735
+[2016-09-12 18:55:49,341 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731733, 1473731734, 1473731735]
+[2016-09-12 18:55:49,341 DEBUG Engine.consolidator] Merging into 1473731733
+[2016-09-12 18:55:49,341 DEBUG Engine.consolidator] Merging 1473731733
+[2016-09-12 18:55:49,346 DEBUG root] 1473731733 Failed: avg-rt>150ms for 24 sec: True
+[2016-09-12 18:55:49,347 DEBUG Engine.consolidator] Processed datapoint: 1473731733/None
+[2016-09-12 18:55:49,347 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:49,349 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:49,349 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:49,349 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:49,373 DEBUG Engine] Iteration took 0.036 sec, sleeping for 0.964 sec...
+[2016-09-12 18:55:50,338 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:50,338 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:50,340 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:50,340 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 15 / 1546 bytes (at speed 1048576)
+[2016-09-12 18:55:50,340 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:55:50,340 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731736
+[2016-09-12 18:55:50,345 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731734, 1473731735, 1473731736]
+[2016-09-12 18:55:50,345 DEBUG Engine.consolidator] Merging into 1473731734
+[2016-09-12 18:55:50,346 DEBUG Engine.consolidator] Merging 1473731734
+[2016-09-12 18:55:50,352 DEBUG root] 1473731734 Failed: avg-rt>150ms for 25 sec: True
+[2016-09-12 18:55:50,353 DEBUG Engine.consolidator] Processed datapoint: 1473731734/None
+[2016-09-12 18:55:50,354 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:50,355 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:50,355 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:50,355 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:50,382 DEBUG Engine] Iteration took 0.044 sec, sleeping for 0.956 sec...
+[2016-09-12 18:55:51,342 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:51,342 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:51,344 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:51,344 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 18 / 1872 bytes (at speed 1048576)
+[2016-09-12 18:55:51,344 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:55:51,344 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731737
+[2016-09-12 18:55:51,348 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731738
+[2016-09-12 18:55:51,353 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731735, 1473731736, 1473731737, 1473731738]
+[2016-09-12 18:55:51,353 DEBUG Engine.consolidator] Merging into 1473731735
+[2016-09-12 18:55:51,353 DEBUG Engine.consolidator] Merging 1473731735
+[2016-09-12 18:55:51,358 DEBUG root] 1473731735 Failed: avg-rt>150ms for 26 sec: True
+[2016-09-12 18:55:51,361 DEBUG Engine.consolidator] Processed datapoint: 1473731735/None
+[2016-09-12 18:55:51,361 DEBUG Engine.consolidator] Merging into 1473731736
+[2016-09-12 18:55:51,361 DEBUG Engine.consolidator] Merging 1473731736
+[2016-09-12 18:55:51,368 DEBUG root] 1473731736 Failed: avg-rt>150ms for 27 sec: True
+[2016-09-12 18:55:51,370 DEBUG Engine.consolidator] Processed datapoint: 1473731736/None
+[2016-09-12 18:55:51,370 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:51,371 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:51,371 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:51,372 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:51,397 DEBUG Engine] Iteration took 0.056 sec, sleeping for 0.944 sec...
+[2016-09-12 18:55:52,345 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:52,346 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:52,347 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:52,347 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 16 / 1636 bytes (at speed 1048576)
+[2016-09-12 18:55:52,348 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:55:52,348 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731737, 1473731738]
+[2016-09-12 18:55:52,348 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:52,350 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:52,351 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:52,351 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:52,361 DEBUG Engine] Iteration took 0.016 sec, sleeping for 0.984 sec...
+[2016-09-12 18:55:53,346 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:53,346 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:53,347 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:53,347 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 16 / 1637 bytes (at speed 1048576)
+[2016-09-12 18:55:53,348 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:55:53,348 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731739
+[2016-09-12 18:55:53,352 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731740
+[2016-09-12 18:55:53,356 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731737, 1473731738, 1473731739, 1473731740]
+[2016-09-12 18:55:53,356 DEBUG Engine.consolidator] Merging into 1473731737
+[2016-09-12 18:55:53,356 DEBUG Engine.consolidator] Merging 1473731737
+[2016-09-12 18:55:53,362 DEBUG root] 1473731737 Failed: avg-rt>150ms for 28 sec: True
+[2016-09-12 18:55:53,364 DEBUG Engine.consolidator] Processed datapoint: 1473731737/None
+[2016-09-12 18:55:53,364 DEBUG Engine.consolidator] Merging into 1473731738
+[2016-09-12 18:55:53,364 DEBUG Engine.consolidator] Merging 1473731738
+[2016-09-12 18:55:53,369 DEBUG root] 1473731738 Failed: avg-rt>150ms for 29 sec: True
+[2016-09-12 18:55:53,371 DEBUG Engine.consolidator] Processed datapoint: 1473731738/None
+[2016-09-12 18:55:53,371 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:53,373 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:53,373 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:53,373 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:53,413 DEBUG Engine] Iteration took 0.067 sec, sleeping for 0.933 sec...
+[2016-09-12 18:55:54,346 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:54,346 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:54,347 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:54,347 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 1110 bytes (at speed 1048576)
+[2016-09-12 18:55:54,348 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:55:54,348 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731739, 1473731740]
+[2016-09-12 18:55:54,348 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:54,350 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:54,350 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:54,350 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:54,364 DEBUG Engine] Iteration took 0.018 sec, sleeping for 0.982 sec...
+[2016-09-12 18:55:55,347 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:55,347 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:55,348 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:55,348 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 9 / 923 bytes (at speed 1048576)
+[2016-09-12 18:55:55,348 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:55:55,349 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731741
+[2016-09-12 18:55:55,353 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731739, 1473731740, 1473731741]
+[2016-09-12 18:55:55,354 DEBUG Engine.consolidator] Merging into 1473731739
+[2016-09-12 18:55:55,354 DEBUG Engine.consolidator] Merging 1473731739
+[2016-09-12 18:55:55,359 DEBUG root] 1473731739 Failed: avg-rt>150ms for 30 sec: True
+[2016-09-12 18:55:55,361 DEBUG Engine.consolidator] Processed datapoint: 1473731739/None
+[2016-09-12 18:55:55,361 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:55,362 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:55,362 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:55,362 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:55,390 DEBUG Engine] Iteration took 0.044 sec, sleeping for 0.956 sec...
+[2016-09-12 18:55:56,347 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:56,347 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:56,348 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:56,348 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 19 / 2050 bytes (at speed 1048576)
+[2016-09-12 18:55:56,349 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:55:56,349 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731742
+[2016-09-12 18:55:56,353 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731740, 1473731741, 1473731742]
+[2016-09-12 18:55:56,353 DEBUG Engine.consolidator] Merging into 1473731740
+[2016-09-12 18:55:56,353 DEBUG Engine.consolidator] Merging 1473731740
+[2016-09-12 18:55:56,359 DEBUG root] 1473731740 Failed: avg-rt>150ms for 31 sec: True
+[2016-09-12 18:55:56,361 DEBUG Engine.consolidator] Processed datapoint: 1473731740/None
+[2016-09-12 18:55:56,361 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:56,362 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:56,363 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:56,363 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:56,388 DEBUG Engine] Iteration took 0.041 sec, sleeping for 0.959 sec...
+[2016-09-12 18:55:57,347 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:57,348 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:57,349 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:57,349 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 20 / 2065 bytes (at speed 1048576)
+[2016-09-12 18:55:57,349 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:55:57,349 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731743
+[2016-09-12 18:55:57,353 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731741, 1473731742, 1473731743]
+[2016-09-12 18:55:57,353 DEBUG Engine.consolidator] Merging into 1473731741
+[2016-09-12 18:55:57,353 DEBUG Engine.consolidator] Merging 1473731741
+[2016-09-12 18:55:57,360 DEBUG root] 1473731741 Failed: avg-rt>150ms for 32 sec: True
+[2016-09-12 18:55:57,362 DEBUG Engine.consolidator] Processed datapoint: 1473731741/None
+[2016-09-12 18:55:57,362 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:57,364 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:57,364 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:57,364 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:57,391 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-09-12 18:55:58,348 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:58,348 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:58,349 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:58,349 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 19 / 1972 bytes (at speed 1048576)
+[2016-09-12 18:55:58,350 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:55:58,350 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731744
+[2016-09-12 18:55:58,354 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731745
+[2016-09-12 18:55:58,358 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731744, 1473731745, 1473731742, 1473731743]
+[2016-09-12 18:55:58,358 DEBUG Engine.consolidator] Merging into 1473731742
+[2016-09-12 18:55:58,358 DEBUG Engine.consolidator] Merging 1473731742
+[2016-09-12 18:55:58,364 DEBUG root] 1473731742 Failed: avg-rt>150ms for 33 sec: True
+[2016-09-12 18:55:58,366 DEBUG Engine.consolidator] Processed datapoint: 1473731742/None
+[2016-09-12 18:55:58,366 DEBUG Engine.consolidator] Merging into 1473731743
+[2016-09-12 18:55:58,366 DEBUG Engine.consolidator] Merging 1473731743
+[2016-09-12 18:55:58,373 DEBUG root] 1473731743 Failed: avg-rt>150ms for 34 sec: True
+[2016-09-12 18:55:58,375 DEBUG Engine.consolidator] Processed datapoint: 1473731743/None
+[2016-09-12 18:55:58,376 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:58,377 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:58,377 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:58,377 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:58,403 DEBUG Engine] Iteration took 0.056 sec, sleeping for 0.944 sec...
+[2016-09-12 18:55:59,349 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:55:59,349 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:55:59,351 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:55:59,351 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 16 / 1664 bytes (at speed 1048576)
+[2016-09-12 18:55:59,351 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:55:59,352 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 14s
+[2016-09-12 18:55:59,362 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731744, 1473731745]
+[2016-09-12 18:55:59,362 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:55:59,364 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:55:59,364 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:55:59,364 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:55:59,374 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-09-12 18:56:00,349 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:00,350 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:00,350 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:00,350 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 12 / 1236 bytes (at speed 1048576)
+[2016-09-12 18:56:00,351 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:56:00,351 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731744, 1473731745]
+[2016-09-12 18:56:00,351 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:00,352 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:00,352 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:00,352 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:00,362 DEBUG Engine] Iteration took 0.012 sec, sleeping for 0.988 sec...
+[2016-09-12 18:56:01,350 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:01,350 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:01,351 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:01,351 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 18 / 1851 bytes (at speed 1048576)
+[2016-09-12 18:56:01,352 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:56:01,352 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731746
+[2016-09-12 18:56:01,356 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731744, 1473731745, 1473731746]
+[2016-09-12 18:56:01,356 DEBUG Engine.consolidator] Merging into 1473731744
+[2016-09-12 18:56:01,356 DEBUG Engine.consolidator] Merging 1473731744
+[2016-09-12 18:56:01,362 DEBUG root] 1473731744 Failed: avg-rt>150ms for 35 sec: True
+[2016-09-12 18:56:01,364 DEBUG Engine.consolidator] Processed datapoint: 1473731744/None
+[2016-09-12 18:56:01,364 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:01,365 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:01,365 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:01,365 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:01,392 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-09-12 18:56:02,355 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:02,355 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:02,357 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:02,357 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 14 / 1571 bytes (at speed 1048576)
+[2016-09-12 18:56:02,358 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731746 into 1473731747
+[2016-09-12 18:56:02,358 DEBUG Engine.jmeter.JTLReader] Buffer len: 16
+[2016-09-12 18:56:02,358 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731747
+[2016-09-12 18:56:02,363 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731748
+[2016-09-12 18:56:02,368 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731745, 1473731746, 1473731747, 1473731748]
+[2016-09-12 18:56:02,368 DEBUG Engine.consolidator] Merging into 1473731745
+[2016-09-12 18:56:02,368 DEBUG Engine.consolidator] Merging 1473731745
+[2016-09-12 18:56:02,376 DEBUG root] 1473731745 Failed: avg-rt>150ms for 36 sec: True
+[2016-09-12 18:56:02,378 DEBUG Engine.consolidator] Processed datapoint: 1473731745/None
+[2016-09-12 18:56:02,378 DEBUG Engine.consolidator] Merging into 1473731746
+[2016-09-12 18:56:02,378 DEBUG Engine.consolidator] Merging 1473731746
+[2016-09-12 18:56:02,385 DEBUG root] 1473731746 Failed: avg-rt>150ms for 37 sec: True
+[2016-09-12 18:56:02,387 DEBUG Engine.consolidator] Processed datapoint: 1473731746/None
+[2016-09-12 18:56:02,387 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:02,388 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:02,388 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:02,388 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:02,414 DEBUG Engine] Iteration took 0.060 sec, sleeping for 0.940 sec...
+[2016-09-12 18:56:03,357 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:03,357 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:03,358 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:03,358 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 18 / 1851 bytes (at speed 1048576)
+[2016-09-12 18:56:03,359 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:56:03,359 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731749
+[2016-09-12 18:56:03,364 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731747, 1473731748, 1473731749]
+[2016-09-12 18:56:03,364 DEBUG Engine.consolidator] Merging into 1473731747
+[2016-09-12 18:56:03,364 DEBUG Engine.consolidator] Merging 1473731747
+[2016-09-12 18:56:03,370 DEBUG root] 1473731747 Failed: avg-rt>150ms for 38 sec: True
+[2016-09-12 18:56:03,372 DEBUG Engine.consolidator] Processed datapoint: 1473731747/None
+[2016-09-12 18:56:03,373 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:03,374 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:03,374 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:03,374 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:03,399 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-09-12 18:56:04,357 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:04,357 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:04,357 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:04,358 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 7 / 706 bytes (at speed 1048576)
+[2016-09-12 18:56:04,358 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:56:04,358 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731748, 1473731749]
+[2016-09-12 18:56:04,358 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:04,359 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:04,359 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:04,359 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:04,370 DEBUG Engine] Iteration took 0.013 sec, sleeping for 0.987 sec...
+[2016-09-12 18:56:05,360 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:05,361 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:05,361 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:05,362 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 8 / 826 bytes (at speed 1048576)
+[2016-09-12 18:56:05,362 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:56:05,362 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731750
+[2016-09-12 18:56:05,368 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731748, 1473731749, 1473731750]
+[2016-09-12 18:56:05,368 DEBUG Engine.consolidator] Merging into 1473731748
+[2016-09-12 18:56:05,368 DEBUG Engine.consolidator] Merging 1473731748
+[2016-09-12 18:56:05,376 DEBUG root] 1473731748 Failed: avg-rt>150ms for 39 sec: True
+[2016-09-12 18:56:05,377 DEBUG Engine.consolidator] Processed datapoint: 1473731748/None
+[2016-09-12 18:56:05,377 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:05,378 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:05,379 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:05,379 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:05,409 DEBUG Engine] Iteration took 0.049 sec, sleeping for 0.951 sec...
+[2016-09-12 18:56:06,361 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:06,362 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:06,364 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:06,364 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 22 / 2379 bytes (at speed 1048576)
+[2016-09-12 18:56:06,364 DEBUG Engine.jmeter.JTLReader] Buffer len: 16
+[2016-09-12 18:56:06,364 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731751
+[2016-09-12 18:56:06,369 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731752
+[2016-09-12 18:56:06,374 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731749, 1473731750, 1473731751, 1473731752]
+[2016-09-12 18:56:06,374 DEBUG Engine.consolidator] Merging into 1473731749
+[2016-09-12 18:56:06,374 DEBUG Engine.consolidator] Merging 1473731749
+[2016-09-12 18:56:06,381 DEBUG root] 1473731749 Failed: avg-rt>150ms for 40 sec: True
+[2016-09-12 18:56:06,382 DEBUG Engine.consolidator] Processed datapoint: 1473731749/None
+[2016-09-12 18:56:06,382 DEBUG Engine.consolidator] Merging into 1473731750
+[2016-09-12 18:56:06,382 DEBUG Engine.consolidator] Merging 1473731750
+[2016-09-12 18:56:06,389 DEBUG root] 1473731750 Failed: avg-rt>150ms for 41 sec: True
+[2016-09-12 18:56:06,390 DEBUG Engine.consolidator] Processed datapoint: 1473731750/None
+[2016-09-12 18:56:06,390 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:06,391 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:06,391 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:06,391 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:06,419 DEBUG Engine] Iteration took 0.057 sec, sleeping for 0.943 sec...
+[2016-09-12 18:56:07,362 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:07,362 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:07,364 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:07,364 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 13 / 1440 bytes (at speed 1048576)
+[2016-09-12 18:56:07,365 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:56:07,366 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731751, 1473731752]
+[2016-09-12 18:56:07,366 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:07,369 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:07,369 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:07,369 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:07,382 DEBUG Engine] Iteration took 0.020 sec, sleeping for 0.980 sec...
+[2016-09-12 18:56:08,363 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:08,363 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:08,364 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:08,364 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 6 / 625 bytes (at speed 1048576)
+[2016-09-12 18:56:08,364 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:56:08,364 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731753
+[2016-09-12 18:56:08,370 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731751, 1473731752, 1473731753]
+[2016-09-12 18:56:08,370 DEBUG Engine.consolidator] Merging into 1473731751
+[2016-09-12 18:56:08,370 DEBUG Engine.consolidator] Merging 1473731751
+[2016-09-12 18:56:08,378 DEBUG root] 1473731751 Failed: avg-rt>150ms for 42 sec: True
+[2016-09-12 18:56:08,380 DEBUG Engine.consolidator] Processed datapoint: 1473731751/None
+[2016-09-12 18:56:08,380 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:08,381 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:08,381 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:08,381 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:08,414 DEBUG Engine] Iteration took 0.051 sec, sleeping for 0.949 sec...
+[2016-09-12 18:56:09,366 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:09,367 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:09,368 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:09,368 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 22 / 2363 bytes (at speed 1048576)
+[2016-09-12 18:56:09,369 DEBUG Engine.jmeter.JTLReader] Buffer len: 16
+[2016-09-12 18:56:09,369 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731754
+[2016-09-12 18:56:09,375 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731755
+[2016-09-12 18:56:09,380 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731752, 1473731753, 1473731754, 1473731755]
+[2016-09-12 18:56:09,380 DEBUG Engine.consolidator] Merging into 1473731752
+[2016-09-12 18:56:09,380 DEBUG Engine.consolidator] Merging 1473731752
+[2016-09-12 18:56:09,387 DEBUG root] 1473731752 Failed: avg-rt>150ms for 43 sec: True
+[2016-09-12 18:56:09,389 DEBUG Engine.consolidator] Processed datapoint: 1473731752/None
+[2016-09-12 18:56:09,389 DEBUG Engine.consolidator] Merging into 1473731753
+[2016-09-12 18:56:09,389 DEBUG Engine.consolidator] Merging 1473731753
+[2016-09-12 18:56:09,395 DEBUG root] 1473731753 Failed: avg-rt>150ms for 44 sec: True
+[2016-09-12 18:56:09,397 DEBUG Engine.consolidator] Processed datapoint: 1473731753/None
+[2016-09-12 18:56:09,397 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:09,398 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:09,398 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:09,398 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:09,421 DEBUG Engine] Iteration took 0.055 sec, sleeping for 0.945 sec...
+[2016-09-12 18:56:10,368 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:10,368 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:10,370 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:10,371 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 16 / 1675 bytes (at speed 1048576)
+[2016-09-12 18:56:10,371 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:56:10,371 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 13s
+[2016-09-12 18:56:10,382 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731756
+[2016-09-12 18:56:10,386 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731757
+[2016-09-12 18:56:10,391 DEBUG Engine.consolidator] Consolidator buffer[4]: [1473731754, 1473731755, 1473731756, 1473731757]
+[2016-09-12 18:56:10,391 DEBUG Engine.consolidator] Merging into 1473731754
+[2016-09-12 18:56:10,391 DEBUG Engine.consolidator] Merging 1473731754
+[2016-09-12 18:56:10,400 DEBUG root] 1473731754 Failed: avg-rt>150ms for 45 sec: True
+[2016-09-12 18:56:10,401 DEBUG Engine.consolidator] Processed datapoint: 1473731754/None
+[2016-09-12 18:56:10,401 DEBUG Engine.consolidator] Merging into 1473731755
+[2016-09-12 18:56:10,402 DEBUG Engine.consolidator] Merging 1473731755
+[2016-09-12 18:56:10,409 DEBUG root] 1473731755 Failed: avg-rt>150ms for 46 sec: True
+[2016-09-12 18:56:10,410 DEBUG Engine.consolidator] Processed datapoint: 1473731755/None
+[2016-09-12 18:56:10,410 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:10,411 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:10,411 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:10,411 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:10,441 DEBUG Engine] Iteration took 0.073 sec, sleeping for 0.927 sec...
+[2016-09-12 18:56:11,370 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:11,370 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:11,372 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:11,372 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 14 / 1450 bytes (at speed 1048576)
+[2016-09-12 18:56:11,372 DEBUG Engine.jmeter.JTLReader] Buffer len: 13
+[2016-09-12 18:56:11,372 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473731756, 1473731757]
+[2016-09-12 18:56:11,373 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:11,375 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:11,376 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:11,376 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:11,388 DEBUG Engine] Iteration took 0.018 sec, sleeping for 0.982 sec...
+[2016-09-12 18:56:12,373 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x106228f10>
+[2016-09-12 18:56:12,373 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x106228fd0>
+[2016-09-12 18:56:12,375 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:12,375 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 14 / 1442 bytes (at speed 1048576)
+[2016-09-12 18:56:12,375 DEBUG Engine.jmeter.JTLReader] Buffer len: 14
+[2016-09-12 18:56:12,375 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731758
+[2016-09-12 18:56:12,381 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473731756, 1473731757, 1473731758]
+[2016-09-12 18:56:12,381 DEBUG Engine.consolidator] Merging into 1473731756
+[2016-09-12 18:56:12,382 DEBUG Engine.consolidator] Merging 1473731756
+[2016-09-12 18:56:12,390 DEBUG root] 1473731756 Failed: avg-rt>150ms for 47 sec: True
+[2016-09-12 18:56:12,391 DEBUG Engine.consolidator] Processed datapoint: 1473731756/None
+[2016-09-12 18:56:12,391 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x1077f8a90>
+[2016-09-12 18:56:12,393 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x106266a90>
+[2016-09-12 18:56:12,393 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x107878c50>
+[2016-09-12 18:56:12,393 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x1078a0e50>
+[2016-09-12 18:56:12,422 DEBUG Engine] Iteration took 0.049 sec, sleeping for 0.951 sec...
+[2016-09-12 18:56:12,795 WARNING Engine] Please wait for graceful shutdown...
+[2016-09-12 18:56:12,807 INFO Engine] Shutting down...
+[2016-09-12 18:56:12,816 DEBUG Engine.local] Shutdown jmeter/simple
+[2016-09-12 18:56:13,821 INFO Engine.jmeter] Sending Shutdown command to JMeter on port 4445...
+[2016-09-12 18:56:18,852 INFO Engine.jmeter] Sending StopTestNow command to JMeter on port 4445...
+[2016-09-12 18:56:19,867 DEBUG Engine.jmeter] JMeter stopped on StopTestNow command
+[2016-09-12 18:56:19,867 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x106228d90>]/{<logging.StreamHandler object at 0x106228d90>: <open file '<stdout>', mode 'w' at 0x1053e8150>}
+[2016-09-12 18:56:19,871 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.yml
+[2016-09-12 18:56:19,898 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.json
+[2016-09-12 18:56:19,899 DEBUG root] Caught exception in try: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 156, in perform
+    self.engine.run()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 139, in run
+    self._wait()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 173, in _wait
+    time.sleep(delay)
+KeyboardInterrupt
+
+[2016-09-12 18:56:19,899 ERROR root] KeyboardInterrupt: 
+[2016-09-12 18:56:19,899 INFO Engine] Post-processing...
+[2016-09-12 18:56:19,899 DEBUG Engine.local] Post-process jmeter/simple
+[2016-09-12 18:56:19,899 DEBUG Engine] Add existing artifact (move=True): /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/modified_requests.jmx
+[2016-09-12 18:56:19,899 DEBUG Engine] No need to copy /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/modified_requests.jmx
+[2016-09-12 18:56:19,914 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/kpi.jtl
+[2016-09-12 18:56:19,914 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 211 / 33350 bytes (at speed 1048576)
+[2016-09-12 18:56:19,915 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731727 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731752 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731738 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731733 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731737 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731729 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731729 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731753 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731757 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731727 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731752 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731726 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731736 into 1473731759
+[2016-09-12 18:56:19,916 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731753 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731754 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731747 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731738 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731754 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731758 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731758 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731721 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731755 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731755 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731742 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731745 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731756 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731750 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731751 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731737 into 1473731759
+[2016-09-12 18:56:19,917 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731749 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731750 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731742 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731756 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731728 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731752 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731752 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731753 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731727 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731739 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731752 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731753 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731740 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731747 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731747 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731729 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,918 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731741 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731757 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731729 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731757 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731743 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731747 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731739 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731755 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731743 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731721 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731720 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731721 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731747 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731757 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731727 into 1473731759
+[2016-09-12 18:56:19,919 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731754 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731752 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731753 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731730 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731743 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731734 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731728 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731751 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731749 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731743 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731743 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731740 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731738 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731728 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731755 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731743 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731729 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731734 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731740 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731738 into 1473731759
+[2016-09-12 18:56:19,920 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731726 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731744 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731735 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731737 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731738 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731756 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731753 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731731 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731726 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731732 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731752 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731755 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731756 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731729 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731747 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731745 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731740 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731747 into 1473731759
+[2016-09-12 18:56:19,921 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731724 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731750 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731726 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731739 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731726 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731740 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731746 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731734 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731743 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731727 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731751 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731735 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731745 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731744 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731754 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731734 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731750 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Putting sample 1473731740 into 1473731759
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Buffer len: 15
+[2016-09-12 18:56:19,922 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731759
+[2016-09-12 18:56:19,929 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731760
+[2016-09-12 18:56:19,934 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731761
+[2016-09-12 18:56:19,939 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731762
+[2016-09-12 18:56:19,945 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731763
+[2016-09-12 18:56:19,950 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731764
+[2016-09-12 18:56:19,955 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731765
+[2016-09-12 18:56:19,960 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731766
+[2016-09-12 18:56:19,966 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731767
+[2016-09-12 18:56:19,972 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731768
+[2016-09-12 18:56:19,977 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731769
+[2016-09-12 18:56:19,983 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731770
+[2016-09-12 18:56:19,989 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731771
+[2016-09-12 18:56:19,999 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731772
+[2016-09-12 18:56:20,006 DEBUG Engine.jmeter.JTLReader] Aggregating: 1473731773
+[2016-09-12 18:56:20,011 DEBUG Engine.consolidator] Consolidator buffer[17]: [1473731757, 1473731758, 1473731759, 1473731760, 1473731761, 1473731762, 1473731763, 1473731764, 1473731765, 1473731766, 1473731767, 1473731768, 1473731769, 1473731770, 1473731771, 1473731772, 1473731773]
+[2016-09-12 18:56:20,011 DEBUG Engine.consolidator] Merging into 1473731757
+[2016-09-12 18:56:20,011 DEBUG Engine.consolidator] Merging 1473731757
+[2016-09-12 18:56:20,019 DEBUG root] 1473731757 Failed: avg-rt>150ms for 48 sec: True
+[2016-09-12 18:56:20,020 DEBUG Engine.consolidator] Processed datapoint: 1473731757/None
+[2016-09-12 18:56:20,020 DEBUG Engine.consolidator] Merging into 1473731758
+[2016-09-12 18:56:20,020 DEBUG Engine.consolidator] Merging 1473731758
+[2016-09-12 18:56:20,028 DEBUG root] 1473731758 Failed: avg-rt>150ms for 49 sec: True
+[2016-09-12 18:56:20,029 DEBUG Engine.consolidator] Processed datapoint: 1473731758/None
+[2016-09-12 18:56:20,029 DEBUG Engine.consolidator] Merging into 1473731759
+[2016-09-12 18:56:20,029 DEBUG Engine.consolidator] Merging 1473731759
+[2016-09-12 18:56:20,039 DEBUG root] 1473731759 Failed: avg-rt>150ms for 50 sec: True
+[2016-09-12 18:56:20,040 DEBUG Engine.consolidator] Processed datapoint: 1473731759/None
+[2016-09-12 18:56:20,040 DEBUG Engine.consolidator] Merging into 1473731760
+[2016-09-12 18:56:20,040 DEBUG Engine.consolidator] Merging 1473731760
+[2016-09-12 18:56:20,049 DEBUG root] 1473731760 Failed: avg-rt>150ms for 51 sec: True
+[2016-09-12 18:56:20,050 DEBUG Engine.consolidator] Processed datapoint: 1473731760/None
+[2016-09-12 18:56:20,050 DEBUG Engine.consolidator] Merging into 1473731761
+[2016-09-12 18:56:20,050 DEBUG Engine.consolidator] Merging 1473731761
+[2016-09-12 18:56:20,059 DEBUG root] 1473731761 Failed: avg-rt>150ms for 52 sec: True
+[2016-09-12 18:56:20,060 DEBUG Engine.consolidator] Processed datapoint: 1473731761/None
+[2016-09-12 18:56:20,061 DEBUG Engine.consolidator] Merging into 1473731762
+[2016-09-12 18:56:20,061 DEBUG Engine.consolidator] Merging 1473731762
+[2016-09-12 18:56:20,070 DEBUG root] 1473731762 Failed: avg-rt>150ms for 53 sec: True
+[2016-09-12 18:56:20,071 DEBUG Engine.consolidator] Processed datapoint: 1473731762/None
+[2016-09-12 18:56:20,071 DEBUG Engine.consolidator] Merging into 1473731763
+[2016-09-12 18:56:20,071 DEBUG Engine.consolidator] Merging 1473731763
+[2016-09-12 18:56:20,081 DEBUG root] 1473731763 Failed: avg-rt>150ms for 54 sec: True
+[2016-09-12 18:56:20,082 DEBUG Engine.consolidator] Processed datapoint: 1473731763/None
+[2016-09-12 18:56:20,082 DEBUG Engine.consolidator] Merging into 1473731764
+[2016-09-12 18:56:20,082 DEBUG Engine.consolidator] Merging 1473731764
+[2016-09-12 18:56:20,092 DEBUG root] 1473731764 Failed: avg-rt>150ms for 55 sec: True
+[2016-09-12 18:56:20,093 DEBUG Engine.consolidator] Processed datapoint: 1473731764/None
+[2016-09-12 18:56:20,093 DEBUG Engine.consolidator] Merging into 1473731765
+[2016-09-12 18:56:20,093 DEBUG Engine.consolidator] Merging 1473731765
+[2016-09-12 18:56:20,102 DEBUG root] 1473731765 Failed: avg-rt>150ms for 56 sec: True
+[2016-09-12 18:56:20,104 DEBUG Engine.consolidator] Processed datapoint: 1473731765/None
+[2016-09-12 18:56:20,104 DEBUG Engine.consolidator] Merging into 1473731766
+[2016-09-12 18:56:20,104 DEBUG Engine.consolidator] Merging 1473731766
+[2016-09-12 18:56:20,114 DEBUG root] 1473731766 Failed: avg-rt>150ms for 57 sec: True
+[2016-09-12 18:56:20,115 DEBUG Engine.consolidator] Processed datapoint: 1473731766/None
+[2016-09-12 18:56:20,115 DEBUG Engine.consolidator] Merging into 1473731767
+[2016-09-12 18:56:20,115 DEBUG Engine.consolidator] Merging 1473731767
+[2016-09-12 18:56:20,125 DEBUG root] 1473731767 Failed: avg-rt>150ms for 58 sec: True
+[2016-09-12 18:56:20,126 DEBUG Engine.consolidator] Processed datapoint: 1473731767/None
+[2016-09-12 18:56:20,126 DEBUG Engine.consolidator] Merging into 1473731768
+[2016-09-12 18:56:20,127 DEBUG Engine.consolidator] Merging 1473731768
+[2016-09-12 18:56:20,137 DEBUG root] 1473731768 Failed: avg-rt>150ms for 59 sec: True
+[2016-09-12 18:56:20,138 DEBUG Engine.consolidator] Processed datapoint: 1473731768/None
+[2016-09-12 18:56:20,138 DEBUG Engine.consolidator] Merging into 1473731769
+[2016-09-12 18:56:20,138 DEBUG Engine.consolidator] Merging 1473731769
+[2016-09-12 18:56:20,148 DEBUG root] 1473731769 Failed: avg-rt>150ms for 60 sec: True
+[2016-09-12 18:56:20,149 DEBUG Engine.consolidator] Processed datapoint: 1473731769/None
+[2016-09-12 18:56:20,149 DEBUG Engine.consolidator] Merging into 1473731770
+[2016-09-12 18:56:20,150 DEBUG Engine.consolidator] Merging 1473731770
+[2016-09-12 18:56:20,160 DEBUG root] 1473731770 Failed: avg-rt>150ms for 61 sec: True
+[2016-09-12 18:56:20,161 DEBUG Engine.consolidator] Processed datapoint: 1473731770/None
+[2016-09-12 18:56:20,161 DEBUG Engine.consolidator] Merging into 1473731771
+[2016-09-12 18:56:20,161 DEBUG Engine.consolidator] Merging 1473731771
+[2016-09-12 18:56:20,172 DEBUG root] 1473731771 Failed: avg-rt>150ms for 62 sec: True
+[2016-09-12 18:56:20,173 DEBUG Engine.consolidator] Processed datapoint: 1473731771/None
+[2016-09-12 18:56:20,173 DEBUG Engine.consolidator] Merging into 1473731772
+[2016-09-12 18:56:20,173 DEBUG Engine.consolidator] Merging 1473731772
+[2016-09-12 18:56:20,184 DEBUG root] 1473731772 Failed: avg-rt>150ms for 63 sec: True
+[2016-09-12 18:56:20,185 DEBUG Engine.consolidator] Processed datapoint: 1473731772/None
+[2016-09-12 18:56:20,185 DEBUG Engine.consolidator] Merging into 1473731773
+[2016-09-12 18:56:20,185 DEBUG Engine.consolidator] Merging 1473731773
+[2016-09-12 18:56:20,196 DEBUG root] 1473731773 Failed: avg-rt>150ms for 64 sec: True
+[2016-09-12 18:56:20,197 DEBUG Engine.consolidator] Processed datapoint: 1473731773/None
+[2016-09-12 18:56:20,197 INFO Engine.final_stats] Test duration: 0:01:10
+[2016-09-12 18:56:20,197 INFO Engine.final_stats] Samples count: 1072, 48.60% failures
+[2016-09-12 18:56:20,197 INFO Engine.final_stats] Average times: total 6.263, latency 0.876, connect 0.097
+[2016-09-12 18:56:20,197 INFO Engine.final_stats] Percentile 0.0%: 0.000
+[2016-09-12 18:56:20,198 INFO Engine.final_stats] Percentile 50.0%: 2.959
+[2016-09-12 18:56:20,198 INFO Engine.final_stats] Percentile 90.0%: 19.654
+[2016-09-12 18:56:20,198 INFO Engine.final_stats] Percentile 95.0%: 35.340
+[2016-09-12 18:56:20,198 INFO Engine.final_stats] Percentile 99.0%: 50.843
+[2016-09-12 18:56:20,198 INFO Engine.final_stats] Percentile 99.9%: 57.202
+[2016-09-12 18:56:20,198 INFO Engine.final_stats] Percentile 100.0%: 57.218
+[2016-09-12 18:56:20,198 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-09-12 18:56:20,198 ERROR Engine] Shutdown: Failed: avg-rt>150ms for 64 sec
+[2016-09-12 18:56:20,200 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.yml
+[2016-09-12 18:56:20,225 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/effective.json
+[2016-09-12 18:56:20,225 DEBUG Engine] Exception in post-process: Failed: avg-rt>150ms for 64 sec
+[2016-09-12 18:56:20,226 DEBUG root] Exception: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 176, in perform
+    self.engine.post_process()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 230, in post_process
+    raise exception
+AutomatedShutdown: Failed: avg-rt>150ms for 64 sec
+
+[2016-09-12 18:56:20,226 INFO root] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258
+[2016-09-12 18:56:20,226 WARNING root] Done performing with code: 3
+[2016-09-12 18:56:20,226 DEBUG Engine] Add existing artifact (move=True): bzt.log
+[2016-09-12 18:56:20,226 DEBUG Engine] Moving bzt.log to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-12_18-55-09.776258/bzt.log
