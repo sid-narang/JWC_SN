@@ -20,4 +20,4 @@ execution:
   scenario: simple
   hold-for: 5m
   concurrency: 250
-  ramp-up: 120s
+  ramp-up: 90s
