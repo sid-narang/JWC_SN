@@ -14,7 +14,7 @@ scenarios:
 services:
 - module: passfail
   criteria:
-  - avg-rt of HomePage>750ms for 10s, continue as failed
+  - avg-rt of HomePage>7500ms for 10s, continue as failed
 
 execution:
   scenario: simple
