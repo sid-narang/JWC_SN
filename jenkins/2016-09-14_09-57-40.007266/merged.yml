@@ -1,0 +1,12 @@
+---
+execution:
+- executor: selenium
+  hold-for: 3m
+  scenario: simple
+modules:
+  cloud:
+    test: Selenium Cloud Test
+scenarios:
+  simple:
+    script: SeleniumDemo.py
+

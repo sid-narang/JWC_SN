@@ -1,0 +1,560 @@
+[2016-09-14 09:57:39,617 INFO root] Taurus CLI Tool v1.6.8
+[2016-09-14 09:57:39,618 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-09-14 09:57:39,618 DEBUG root] Python: CPython 2.7.10
+[2016-09-14 09:57:39,618 DEBUG root] OS: ('Darwin', 'Sids-MacBook-Pro-2.local', '14.5.0', 'Darwin Kernel Version 14.5.0: Mon Aug 29 21:14:16 PDT 2016; root:xnu-2782.50.6~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2016-09-14 09:57:39,618 INFO root] Starting with configs: ['seleniumdemo.yml']
+[2016-09-14 09:57:39,618 INFO Engine] Configuring...
+[2016-09-14 09:57:39,618 DEBUG Engine] Reading machine configs from: /etc/bzt.d
+[2016-09-14 09:57:39,619 DEBUG Engine] Adding personal config: /Users/sidnarang/.bzt-rc
+[2016-09-14 09:57:39,619 DEBUG Engine.Configuration] Configs: ['/etc/bzt.d/10-base.json', '/etc/bzt.d/99-installID.yml', '/Users/sidnarang/.bzt-rc']
+[2016-09-14 09:57:39,620 DEBUG Engine.Configuration] Reading /etc/bzt.d/10-base.json as JSON
+[2016-09-14 09:57:39,621 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-installID.yml as YAML
+[2016-09-14 09:57:39,622 DEBUG Engine.Configuration] Reading /Users/sidnarang/.bzt-rc as YAML
+[2016-09-14 09:57:39,623 DEBUG Engine.Configuration] Configs: ['seleniumdemo.yml']
+[2016-09-14 09:57:39,623 DEBUG Engine.Configuration] Reading seleniumdemo.yml as YAML
+[2016-09-14 09:57:39,625 DEBUG root] Configs: ['seleniumdemo.yml']
+[2016-09-14 09:57:39,625 DEBUG root] Reading seleniumdemo.yml as YAML
+[2016-09-14 09:57:39,627 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.6.8&installID=c8843905-b92c-4f70-b648-47b394eef70f
+[2016-09-14 09:57:40,006 DEBUG Engine] Result: {"latest":"1.6.8","needsUpgrade":false}
+[2016-09-14 09:57:40,007 DEBUG Engine] Installation is up-to-date
+[2016-09-14 09:57:40,007 INFO Engine] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266
+[2016-09-14 09:57:40,007 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective
+[2016-09-14 09:57:40,010 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.yml
+[2016-09-14 09:57:40,027 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.json
+[2016-09-14 09:57:40,027 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/merged.yml
+[2016-09-14 09:57:40,028 DEBUG root] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/merged.yml
+[2016-09-14 09:57:40,029 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/merged.json
+[2016-09-14 09:57:40,029 DEBUG root] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/merged.json
+[2016-09-14 09:57:40,029 DEBUG Engine] Add existing artifact (move=False): seleniumdemo.yml
+[2016-09-14 09:57:40,029 DEBUG Engine] Copying seleniumdemo.yml to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/seleniumdemo.yml
+[2016-09-14 09:57:40,030 INFO Engine] Preparing...
+[2016-09-14 09:57:40,030 DEBUG Engine] Module config: consolidator defaultdict(None, {u'ignore-labels': [u'ignore'], u'percentiles': [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0], u'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2016-09-14 09:57:40,031 DEBUG root] Importing module: bzt.modules.aggregator
+[2016-09-14 09:57:40,035 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/Library/Python/2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2016-09-14 09:57:40,036 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2016-09-14 09:57:40,036 DEBUG Engine] Module config: monitoring defaultdict(None, {u'class': u'bzt.modules.monitoring.Monitoring'})
+[2016-09-14 09:57:40,036 DEBUG root] Importing module: bzt.modules.monitoring
+[2016-09-14 09:57:40,087 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/Library/Python/2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2016-09-14 09:57:40,087 DEBUG Engine] Module config: local defaultdict(None, {u'class': u'bzt.modules.provisioning.Local'})
+[2016-09-14 09:57:40,087 DEBUG root] Importing module: bzt.modules.provisioning
+[2016-09-14 09:57:40,087 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/Library/Python/2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2016-09-14 09:57:40,087 DEBUG Engine] Module config: selenium defaultdict(None, {u'selenium-tools': defaultdict(None, {u'junit': defaultdict(None, {u'hamcrest-core': u'~/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar', u'path': u'~/.bzt/selenium-taurus/tools/junit/junit.jar', u'jar-name': u'compiled.jar', u'working-dir': u'classes', u'selenium-server': u'~/.bzt/selenium-taurus/selenium-server.jar'}), u'nose': defaultdict(None, {u'working-dir': u'classes'})}), u'class': u'bzt.modules.selenium.SeleniumExecutor'})
+[2016-09-14 09:57:40,087 DEBUG root] Importing module: bzt.modules.selenium
+[2016-09-14 09:57:40,097 DEBUG easyprocess] version=0.2.2
+[2016-09-14 09:57:40,099 DEBUG pyvirtualdisplay] version=0.2
+[2016-09-14 09:57:40,101 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/Library/Python/2.7/site-packages/bzt/modules/selenium.pyc'>
+[2016-09-14 09:57:40,101 DEBUG Engine.local] Preparing executor: selenium/4574813904
+[2016-09-14 09:57:40,101 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes
+[2016-09-14 09:57:40,101 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/selenium_tests_report.ldjson
+[2016-09-14 09:57:40,101 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/junit.out
+[2016-09-14 09:57:40,101 DEBUG Engine] New artifact filename: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/junit.err
+[2016-09-14 09:57:40,102 WARNING Engine.selenium] Script 'SeleniumDemo.py' won't be discovered by nosetests, renaming script to test_SeleniumDemo.py
+[2016-09-14 09:57:40,103 DEBUG Engine.selenium.NoseTester.TclLibrary] We don't need to check tcl library on this platform
+[2016-09-14 09:57:40,103 DEBUG Engine] Module config: final_stats defaultdict(None, {u'class': u'bzt.modules.reporting.FinalStatus'})
+[2016-09-14 09:57:40,103 DEBUG root] Importing module: bzt.modules.reporting
+[2016-09-14 09:57:40,108 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/Library/Python/2.7/site-packages/bzt/modules/reporting.pyc'>
+[2016-09-14 09:57:40,108 DEBUG Engine] Module config: console defaultdict(None, {u'disable': False, u'class': u'bzt.modules.console.ConsoleStatusReporter'})
+[2016-09-14 09:57:40,109 DEBUG root] Importing module: bzt.modules.console
+[2016-09-14 09:57:40,109 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/Library/Python/2.7/site-packages/bzt/modules/console.pyc'>
+[2016-09-14 09:57:40,114 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.yml
+[2016-09-14 09:57:40,126 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.json
+[2016-09-14 09:57:40,127 INFO Engine] Starting...
+[2016-09-14 09:57:40,127 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:40,127 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:40,127 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:40,127 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:40,127 INFO Engine.console] Waiting for results...
+[2016-09-14 09:57:40,127 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:40,127 DEBUG Engine.local] Delay setup: 0(start-at) + 0(delay) = 0
+[2016-09-14 09:57:40,128 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.yml
+[2016-09-14 09:57:40,143 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.json
+[2016-09-14 09:57:40,144 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:40,144 DEBUG bzt.utils] Executing shell: ['/usr/bin/python', '/Library/Python/2.7/site-packages/bzt/modules/../resources/nose_plugin.py', '--report-file', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/selenium_tests_report.ldjson', '-d', '180.0', '/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes']
+[2016-09-14 09:57:40,148 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:40,148 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:40,148 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:40,148 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:40,148 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:40,354 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:40,354 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:40,354 DEBUG Engine.console] Overriding logging streams
+[2016-09-14 09:57:40,354 DEBUG Engine.console] Redirected logging streams, [<logging.StreamHandler object at 0x10f4f9d90>]/{<logging.StreamHandler object at 0x10f4f9d90>: <open file '<stdout>', mode 'w' at 0x10e6b7150>}
+[2016-09-14 09:57:40,355 INFO Engine.console] Waiting for finish...
+[2016-09-14 09:57:40,378 DEBUG Engine] Iteration took 0.234 sec, sleeping for 0.766 sec...
+[2016-09-14 09:57:41,147 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:41,148 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:41,148 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:41,148 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:41,148 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:41,148 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:41,149 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:41,149 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:41,152 DEBUG Engine] Iteration took 0.005 sec, sleeping for 0.995 sec...
+[2016-09-14 09:57:42,147 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:42,148 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:42,148 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:42,148 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:42,148 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:42,148 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:42,149 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:42,149 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:42,152 DEBUG Engine] Iteration took 0.005 sec, sleeping for 0.995 sec...
+[2016-09-14 09:57:43,148 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:43,148 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:43,149 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:43,149 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:43,149 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:43,149 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:43,151 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:43,151 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:43,155 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:44,152 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:44,153 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:44,153 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:44,153 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:44,153 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:44,153 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:44,155 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:44,155 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:44,160 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:45,156 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:45,156 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:45,157 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:45,157 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:45,157 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:45,157 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:45,159 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:45,159 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:45,163 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:46,156 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:46,157 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:46,157 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:46,157 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:46,157 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:46,157 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:46,159 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:46,160 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:46,164 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:47,157 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:47,158 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:47,158 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:47,158 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:47,158 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:47,158 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:47,160 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:47,160 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:47,164 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:48,157 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:48,158 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:48,158 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:48,158 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:48,158 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:48,158 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:48,160 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:48,160 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:48,164 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:49,160 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:49,161 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:49,162 DEBUG Engine.selenium.LoadSamplesReader.LDJSONReader] No data to start reading yet
+[2016-09-14 09:57:49,162 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 0
+[2016-09-14 09:57:49,162 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:49,162 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:49,164 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:49,164 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:49,168 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-14 09:57:50,163 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:50,163 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:50,163 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:50,164 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:50,164 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:50,165 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:50,165 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:50,168 DEBUG Engine] Iteration took 0.005 sec, sleeping for 0.995 sec...
+[2016-09-14 09:57:51,168 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:51,168 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:51,169 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:51,169 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:51,169 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:51,171 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:51,171 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:51,175 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:52,168 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:52,169 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:52,169 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:52,169 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:52,169 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:52,172 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:52,172 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:52,177 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-14 09:57:53,170 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:53,170 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:53,170 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:53,171 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:53,171 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:53,173 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:53,173 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:53,177 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:54,174 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:54,174 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:54,174 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:54,174 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:54,175 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:54,177 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:54,177 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:54,181 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:55,176 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:55,176 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:55,176 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:55,176 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:55,177 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:55,179 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:55,179 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:55,183 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:56,176 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:56,176 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:56,177 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:56,177 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:56,177 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:56,179 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:56,179 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:56,183 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:57,178 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:57,178 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:57,178 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:57,178 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:57,178 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:57,180 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:57,181 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:57,185 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:58,181 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:58,182 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:58,182 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:58,182 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:58,182 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:58,184 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:58,184 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:58,188 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:57:59,183 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:57:59,183 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:57:59,183 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:57:59,184 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:57:59,184 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:57:59,185 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:57:59,185 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:57:59,189 DEBUG Engine] Iteration took 0.006 sec, sleeping for 0.994 sec...
+[2016-09-14 09:58:00,186 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:00,186 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:00,186 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:00,186 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:00,186 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:00,187 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:00,187 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:00,191 DEBUG Engine] Iteration took 0.005 sec, sleeping for 0.995 sec...
+[2016-09-14 09:58:01,191 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:01,191 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:01,191 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:01,191 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:01,191 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:01,192 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:01,192 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:01,195 DEBUG Engine] Iteration took 0.005 sec, sleeping for 0.995 sec...
+[2016-09-14 09:58:02,191 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:02,191 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:02,191 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:02,192 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:02,192 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:02,194 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:02,194 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:02,199 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-14 09:58:03,194 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:03,194 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:03,194 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:03,194 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:03,194 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:03,196 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:03,196 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:03,199 DEBUG Engine] Iteration took 0.006 sec, sleeping for 0.994 sec...
+[2016-09-14 09:58:04,198 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:04,198 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:04,198 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:04,198 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:04,198 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:04,199 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:04,200 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:04,203 DEBUG Engine] Iteration took 0.005 sec, sleeping for 0.995 sec...
+[2016-09-14 09:58:05,198 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:05,199 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:05,199 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:05,199 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:05,199 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:05,201 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:05,201 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:05,205 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:06,204 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:06,204 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:06,204 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:06,204 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:06,204 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:06,206 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:06,206 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:06,211 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:07,207 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:07,207 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:07,207 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:07,208 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:07,208 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:07,210 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:07,210 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:07,214 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:08,212 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:08,213 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:08,213 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:08,213 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:08,213 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:08,215 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:08,215 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:08,220 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-14 09:58:09,217 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:09,218 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:09,218 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:09,218 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:09,218 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:09,220 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:09,220 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:09,224 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:10,218 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:10,219 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:10,219 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:10,219 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:10,219 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:10,221 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:10,221 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:10,225 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:11,220 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:11,220 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:11,220 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:11,220 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:11,220 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:11,222 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:11,223 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:11,227 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:12,221 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:12,221 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:12,222 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:12,222 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:12,222 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:12,223 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:12,223 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:12,227 DEBUG Engine] Iteration took 0.006 sec, sleeping for 0.994 sec...
+[2016-09-14 09:58:13,222 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:13,222 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:13,222 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:13,222 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:13,222 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:13,224 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:13,225 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:13,229 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:14,227 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:14,227 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:14,227 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:14,227 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:14,228 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:14,230 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:14,230 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:14,234 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:15,229 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:15,230 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:15,230 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:15,230 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:15,230 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:15,232 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:15,232 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:15,237 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-14 09:58:16,232 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:16,232 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:16,233 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:16,233 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:16,233 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:16,235 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:16,235 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:16,239 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:17,233 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:17,234 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:17,234 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:17,234 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:17,234 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:17,236 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:17,236 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:17,240 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:18,239 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:18,239 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:18,239 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:18,239 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:18,239 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:18,242 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:18,242 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:18,246 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:19,239 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:19,240 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:19,240 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:19,240 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-09-14 09:58:19,240 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:19,242 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:19,242 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:19,246 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:20,240 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:20,241 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:20,241 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 2
+[2016-09-14 09:58:20,241 DEBUG Engine.selenium.LoadSamplesReader] Aggregating: 1473872260
+[2016-09-14 09:58:20,242 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872260]
+[2016-09-14 09:58:20,242 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:20,243 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:20,243 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:20,247 DEBUG Engine] Iteration took 0.006 sec, sleeping for 0.994 sec...
+[2016-09-14 09:58:21,244 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:21,245 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:21,245 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:21,245 INFO Engine.selenium.LoadSamplesReader] Changed data analysis delay to 18s
+[2016-09-14 09:58:21,253 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872260]
+[2016-09-14 09:58:21,253 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:21,254 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:21,255 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:21,258 DEBUG Engine] Iteration took 0.014 sec, sleeping for 0.986 sec...
+[2016-09-14 09:58:22,247 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:22,247 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:22,247 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:22,247 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872260]
+[2016-09-14 09:58:22,247 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:22,249 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:22,250 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:22,254 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:23,252 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:23,252 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:23,252 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:23,252 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872260]
+[2016-09-14 09:58:23,252 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:23,255 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:23,255 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:23,259 DEBUG Engine] Iteration took 0.007 sec, sleeping for 0.993 sec...
+[2016-09-14 09:58:24,254 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:24,254 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:24,255 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 2
+[2016-09-14 09:58:24,255 DEBUG Engine.selenium.LoadSamplesReader] Aggregating: 1473872269
+[2016-09-14 09:58:24,256 DEBUG Engine.consolidator] Consolidator buffer[2]: [1473872260, 1473872269]
+[2016-09-14 09:58:24,256 DEBUG Engine.consolidator] Merging into 1473872260
+[2016-09-14 09:58:24,256 DEBUG Engine.consolidator] Merging 1473872260
+[2016-09-14 09:58:24,258 DEBUG Engine.consolidator] Processed datapoint: 1473872260/None
+[2016-09-14 09:58:24,258 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:24,259 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:24,259 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:24,270 DEBUG Engine] Iteration took 0.016 sec, sleeping for 0.984 sec...
+[2016-09-14 09:58:25,255 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:25,255 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:25,255 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:25,255 INFO Engine.selenium.LoadSamplesReader] Changed data analysis delay to 60s
+[2016-09-14 09:58:25,259 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872269]
+[2016-09-14 09:58:25,259 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:25,260 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:25,260 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:25,264 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-14 09:58:26,259 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:26,259 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:26,259 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:26,259 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872269]
+[2016-09-14 09:58:26,260 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:26,262 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:26,262 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:26,267 DEBUG Engine] Iteration took 0.009 sec, sleeping for 0.991 sec...
+[2016-09-14 09:58:27,263 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:27,263 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:27,263 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:27,263 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872269]
+[2016-09-14 09:58:27,263 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:27,266 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:27,266 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:27,270 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-14 09:58:28,265 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:28,265 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:28,266 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 1
+[2016-09-14 09:58:28,266 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872269]
+[2016-09-14 09:58:28,266 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:28,268 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:28,268 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:28,273 DEBUG Engine] Iteration took 0.008 sec, sleeping for 0.992 sec...
+[2016-09-14 09:58:29,266 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:29,266 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:29,266 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 2
+[2016-09-14 09:58:29,266 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872269]
+[2016-09-14 09:58:29,266 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:29,268 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:29,268 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:29,272 DEBUG Engine] Iteration took 0.006 sec, sleeping for 0.994 sec...
+[2016-09-14 09:58:30,268 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x10f4f9f10>
+[2016-09-14 09:58:30,269 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10f4f9f90>
+[2016-09-14 09:58:30,269 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 2
+[2016-09-14 09:58:30,269 DEBUG Engine.consolidator] Consolidator buffer[1]: [1473872269]
+[2016-09-14 09:58:30,269 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x10f511c50>
+[2016-09-14 09:58:30,270 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x110bce390>
+[2016-09-14 09:58:30,270 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x110be6590>
+[2016-09-14 09:58:30,275 DEBUG Engine] Iteration took 0.006 sec, sleeping for 0.994 sec...
+[2016-09-14 09:58:30,976 WARNING Engine] Please wait for graceful shutdown...
+[2016-09-14 09:58:30,982 INFO Engine] Shutting down...
+[2016-09-14 09:58:30,985 DEBUG Engine.local] Shutdown selenium/simple
+[2016-09-14 09:58:31,166 ERROR Engine] Error while shutting down: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 190, in _shutdown
+    module.shutdown()
+  File "/Library/Python/2.7/site-packages/bzt/modules/provisioning.py", line 111, in shutdown
+    executor.shutdown()
+  File "/Library/Python/2.7/site-packages/bzt/modules/selenium.py", line 243, in shutdown
+    self.runner.shutdown()
+  File "/Library/Python/2.7/site-packages/bzt/modules/selenium.py", line 327, in shutdown
+    shutdown_process(self.process, self.log)
+  File "/Library/Python/2.7/site-packages/bzt/utils.py", line 613, in shutdown_process
+    time.sleep(1)
+KeyboardInterrupt
+
+[2016-09-14 09:58:31,170 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x10f4f9d90>]/{<logging.StreamHandler object at 0x10f4f9d90>: <open file '<stdout>', mode 'w' at 0x10e6b7150>}
+[2016-09-14 09:58:31,172 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.yml
+[2016-09-14 09:58:31,187 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.json
+[2016-09-14 09:58:31,189 DEBUG root] Caught exception in try: Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/bzt/cli.py", line 156, in perform
+    self.engine.run()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 148, in run
+    self._shutdown()
+  File "/Library/Python/2.7/site-packages/bzt/engine.py", line 199, in _shutdown
+    raise exception
+KeyboardInterrupt
+
+[2016-09-14 09:58:31,189 ERROR root] KeyboardInterrupt: 
+[2016-09-14 09:58:31,189 INFO Engine] Post-processing...
+[2016-09-14 09:58:31,189 DEBUG Engine.local] Post-process selenium/simple
+[2016-09-14 09:58:31,189 DEBUG Engine.selenium.LoadSamplesReader] Buffer len: 2
+[2016-09-14 09:58:31,189 DEBUG Engine.selenium.LoadSamplesReader] Aggregating: 1473872299
+[2016-09-14 09:58:31,190 DEBUG Engine.selenium.LoadSamplesReader] Aggregating: 1473872303
+[2016-09-14 09:58:31,191 DEBUG Engine.consolidator] Consolidator buffer[3]: [1473872299, 1473872269, 1473872303]
+[2016-09-14 09:58:31,191 DEBUG Engine.consolidator] Merging into 1473872269
+[2016-09-14 09:58:31,191 DEBUG Engine.consolidator] Merging 1473872269
+[2016-09-14 09:58:31,193 DEBUG Engine.consolidator] Processed datapoint: 1473872269/None
+[2016-09-14 09:58:31,193 DEBUG Engine.consolidator] Merging into 1473872299
+[2016-09-14 09:58:31,193 DEBUG Engine.consolidator] Merging 1473872299
+[2016-09-14 09:58:31,195 DEBUG Engine.consolidator] Processed datapoint: 1473872299/None
+[2016-09-14 09:58:31,195 DEBUG Engine.consolidator] Merging into 1473872303
+[2016-09-14 09:58:31,195 DEBUG Engine.consolidator] Merging 1473872303
+[2016-09-14 09:58:31,197 DEBUG Engine.consolidator] Processed datapoint: 1473872303/None
+[2016-09-14 09:58:31,197 INFO Engine.final_stats] Test duration: 0:00:51
+[2016-09-14 09:58:31,197 INFO Engine.final_stats] Samples count: 4, 100.00% failures
+[2016-09-14 09:58:31,197 INFO Engine.final_stats] Average times: total 12.108, latency 0.000, connect 0.000
+[2016-09-14 09:58:31,197 INFO Engine.final_stats] Percentile 0.0%: 4.058
+[2016-09-14 09:58:31,197 INFO Engine.final_stats] Percentile 50.0%: 9.112
+[2016-09-14 09:58:31,198 INFO Engine.final_stats] Percentile 90.0%: 30.198
+[2016-09-14 09:58:31,198 INFO Engine.final_stats] Percentile 95.0%: 30.198
+[2016-09-14 09:58:31,198 INFO Engine.final_stats] Percentile 99.0%: 30.198
+[2016-09-14 09:58:31,198 INFO Engine.final_stats] Percentile 99.9%: 30.198
+[2016-09-14 09:58:31,198 INFO Engine.final_stats] Percentile 100.0%: 30.198
+[2016-09-14 09:58:31,198 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-09-14 09:58:31,199 DEBUG Engine.Configuration] Dumping YAML config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.yml
+[2016-09-14 09:58:31,213 DEBUG Engine.Configuration] Dumping JSON config into /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/effective.json
+[2016-09-14 09:58:31,214 INFO root] Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266
+[2016-09-14 09:58:31,214 WARNING root] Done performing with code: 1
+[2016-09-14 09:58:31,214 DEBUG Engine] Add existing artifact (move=True): bzt.log
+[2016-09-14 09:58:31,214 DEBUG Engine] Moving bzt.log to /Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/bzt.log

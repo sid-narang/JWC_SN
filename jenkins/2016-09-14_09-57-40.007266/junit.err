@@ -1,0 +1,369 @@
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 9.182s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 108, in _wait_until_connectable
+    % (self.profile.path))
+WebDriverException: Message: Can't load the profile. Profile Dir: /var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/tmp56XwRj If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 30.200s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 4.060s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 5.068s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 4.066s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 108, in _wait_until_connectable
+    % (self.profile.path))
+WebDriverException: Message: Can't load the profile. Profile Dir: /var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/tmphavZuu If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 30.190s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 5.065s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 3.056s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 9.070s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 4.073s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 3.062s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 4.067s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 5.069s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 108, in _wait_until_connectable
+    % (self.profile.path))
+WebDriverException: Message: Can't load the profile. Profile Dir: /var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/tmpTrb6F9 If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 30.219s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 15.092s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... ERROR
+
+======================================================================
+ERROR: test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/sidnarang/Desktop/JWC_SN/jenkins/2016-09-14_09-57-40.007266/classes/test_SeleniumDemo.py", line 9, in setUp
+    self.driver = webdriver.Firefox()
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 80, in __init__
+    self.binary, timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/extension_connection.py", line 52, in __init__
+    self.binary.launch_browser(self.profile, timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 68, in launch_browser
+    self._wait_until_connectable(timeout=timeout)
+  File "/Library/Python/2.7/site-packages/selenium/webdriver/firefox/firefox_binary.py", line 99, in _wait_until_connectable
+    "The browser appears to have exited "
+WebDriverException: Message: The browser appears to have exited before we could connect. If you specified a log_file in the FirefoxBinary constructor, check it for details.
+
+
+----------------------------------------------------------------------
+Ran 1 test in 8.073s
+
+FAILED (errors=1)
+test_search_in_python_org (test_SeleniumDemo.PythonOrgSearch) ... 

@@ -1,0 +1,19 @@
+{
+ "scenarios": {
+  "simple": {
+   "script": "SeleniumDemo.py"
+  }
+ }, 
+ "execution": [
+  {
+   "hold-for": "3m", 
+   "scenario": "simple", 
+   "executor": "selenium"
+  }
+ ], 
+ "modules": {
+  "cloud": {
+   "test": "Selenium Cloud Test"
+  }
+ }
+}

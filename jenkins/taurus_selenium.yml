@@ -1,0 +1,33 @@
+---
+execution:
+- concurrency: 360
+  executor: selenium
+  hold-for: 30m
+  locations:
+    asia-east1-a: 10
+    eu-central-1: 10
+    eu-west-1: 10
+    europe-west1-b: 10
+    us-central1-a: 10
+    us-east-1: 10
+    us-east1-b: 10
+    us-west-1: 10
+    us-west1-a: 10
+  locations-weighted: false
+  ramp-up: 10m
+  scenario: Blazedemo.java
+scenarios:
+  Blazedemo.java:
+    script: Blazedemo.java
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+  module: monitoring
