@@ -18,6 +18,10 @@ services:
 
 execution:
   scenario: simple
-  hold-for: 5m
+  hold-for: 10m
   concurrency: 300
   ramp-up: 90s
+  locations: 
+     eu-central-1: 5
+     eu-west-1: 1
+ 
