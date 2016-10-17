@@ -11,6 +11,9 @@ scenarios:
     - label: VacationPage
       url: http://blazedemo.com/vacation.html
 
+execution:
+
+
 services:
 - module: passfail
   criteria:
@@ -19,8 +22,8 @@ services:
 execution:
   scenario: simple
   hold-for: 12m
-  concurrency: 300
-  ramp-up: 90s
+  concurrency: 500
+  ramp-up: 80s
   locations: 
      eu-central-1: 5
      eu-west-1: 1
